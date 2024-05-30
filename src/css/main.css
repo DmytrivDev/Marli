@@ -2,10 +2,44 @@
 @import url('./settings/fonts.scss');
 @import url('./settings/default.scss');
 @import url('./settings/variables.scss');
+@import url('./settings/index.scss');
 @import url('./settings/general.scss');
+
+/* General-sections */
+@import url('./sections/general/companies.scss');
+@import url('./sections/general/overview.scss');
+@import url('./sections/general/delivery.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
+
+/* Home */
+@import url('./sections/home/hero.scss');
+@import url('./sections/home/benefits.scss');
+@import url('./sections/home/companies.scss');
+@import url('./sections/home/shipments.scss');
+@import url('./sections/home/price.scss');
+@import url('./sections/home/overview.scss');
+@import url('./sections/home/feedback.scss');
+@import url('./sections/home/courier.scss');
+@import url('./sections/home/delivery.scss');
+
+/* About */
+@import url('./sections/about/overview.scss');
+@import url('./sections/about/success.scss');
+@import url('./sections/about/companies.scss');
+@import url('./sections/about/delivery.scss');
+
+/* Contact */
+@import url('./sections/contact/contact.scss');
+@import url('./sections/contact/delivery.scss');
+
+/* Politique */
+@import url('./sections/politique/politique.scss');
+
+/* Error */
+@import url('./sections/error/error.scss');
+@import url('./sections/error/delivery.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');

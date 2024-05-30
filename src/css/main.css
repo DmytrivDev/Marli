@@ -1,0 +1,11 @@
+/* Settings */
+@import url('./settings/fonts.scss');
+@import url('./settings/default.scss');
+@import url('./settings/variables.scss');
+@import url('./settings/general.scss');
+
+/* Header */
+@import url('./sections/header/header.scss');
+
+/* Footer */
+@import url('./sections/footer/footer.scss');

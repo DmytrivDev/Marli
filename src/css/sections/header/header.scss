@@ -1,0 +1,166 @@
+.header {
+  &__body {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-wrapp {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7.5625rem;
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    font-style: normal;
+    a {
+      color: var(--ch);
+      font-size: 0.875rem;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      transition: all 200ms;
+      &::before {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .address-email {
+      &::before {
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='8665646_phone_communication_icon 2'%3E%3Cpath id='image 12 (Traced)' fill-rule='evenodd' clip-rule='evenodd' d='M0.631057 3.07406C0.17559 3.26566 -0.00309201 3.60173 4.04153e-05 4.26082L0.00217317 4.71174L3.94136 6.78277C6.10787 7.92184 7.93441 8.8538 8.00032 8.8538C8.06617 8.8538 9.89304 7.92184 12.06 6.78277L16 4.71174L15.9799 4.16713C15.9584 3.5809 15.8795 3.41271 15.5011 3.14667C15.3181 3.01802 15.2741 3.0172 8.07403 3.00358C2.13902 2.99241 0.794877 3.00509 0.631057 3.07406ZM0.0130367 9.6337C0.0308982 13.3208 0.033964 13.3981 0.168658 13.568C0.244236 13.6632 0.388861 13.7994 0.490098 13.8706C0.673379 13.9994 0.704969 14 7.99559 14C15.2862 14 15.3178 13.9994 15.5011 13.8706C15.6023 13.7994 15.7469 13.6632 15.8225 13.568C15.9572 13.3981 15.9603 13.3208 15.9781 9.6337C15.9881 7.56518 15.9819 5.87278 15.9643 5.87278C15.9467 5.87278 14.199 6.79639 12.0805 7.92529C9.96215 9.05419 8.14734 9.98923 8.04771 10.0032C7.90601 10.023 7.01614 9.57559 3.96522 7.95065C1.81951 6.80782 0.0484264 5.87278 0.0294319 5.87278C0.0104374 5.87278 0.00303959 7.56518 0.0130367 9.6337Z' fill='%23037394'/%3E%3C/g%3E%3C/svg%3E%0A");
+      }
+    }
+    .address-tel {
+      &::before {
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='8665646_phone_communication_icon 1' clip-path='url(%23clip0_0_205)'%3E%3Cpath id='Vector' d='M15.975 12.0939L15.2484 15.2439C15.1464 15.6892 14.755 16.0008 14.2966 16.0008C6.4125 16.0002 0 9.58768 0 1.70331C0 1.24518 0.311531 0.853309 0.756875 0.751746L3.90687 0.025184C4.36562 -0.0811285 4.83437 0.156996 5.025 0.591434L6.47875 3.98206C6.64869 4.38143 6.53406 4.84675 6.19812 5.12112L4.51562 6.47206C5.5775 8.63518 7.33625 10.3939 9.5 11.4564L10.8775 9.77518C11.149 9.43831 11.6178 9.32175 12.0172 9.49472L15.4078 10.9482C15.8156 11.1627 16.0812 11.6377 15.975 12.0939Z' fill='%23037394'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_0_205'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+  &__link {
+    padding: 0.95rem 1.44rem;
+    font-size: 0.875rem;
+  }
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  &__company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.875rem;
+  }
+  &__reviews {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    span {
+      color: var(--ch);
+      font-size: 0.875rem;
+      line-height: normal;
+    }
+  }
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 0.38rem;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1rem;
+    }
+  }
+  &__lang {
+    position: relative;
+    a {
+      color: var(--c0);
+      font-size: 0.875rem;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      &::before {
+        content: "";
+        width: 1.0625rem;
+        height: 0.75rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-image: url("/img/icons/flag_1.jpg");
+      }
+      &::after {
+        content: "";
+        transition: all 200ms;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5' fill='none'%3E%3Cpath d='M1 1L4 4L7 1' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      }
+    }
+    &:hover .sub-menu {
+      visibility: visible;
+      opacity: 1;
+    }
+    &:hover a::after {
+      transform: rotateX(-180deg);
+    }
+    .sub-menu {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: -0.5rem;
+      background-color: var(--cw);
+      width: 100%;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      a {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  &__down {
+    padding: 1rem 0;
+    background-color: var(--cb);
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2.38rem;
+  }
+  &__item {
+    a {
+      color: var(--cw);
+      line-height: normal;
+      transition: all 200ms;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

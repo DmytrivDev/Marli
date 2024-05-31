@@ -45,10 +45,11 @@
   }
   &__img-wrapp {
     position: absolute;
-    bottom: -1.7rem;
+    bottom: -1rem;
     right: -6rem;
     width: 55.6875rem;
     img {
+      display: block;
       width: 100%;
       height: auto;
     }
@@ -82,7 +83,6 @@
       font-size: 0.8125rem;
     }
     &__img-wrapp {
-      bottom: -1.7rem;
       right: 0;
       left: 19rem;
       width: 45rem;

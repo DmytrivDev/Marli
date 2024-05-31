@@ -1,8 +1,8 @@
 .header {
   &__top {
+    padding: 1.5rem 0;
   }
   &__body {
-    padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,9 +181,9 @@
       position: relative;
       z-index: 15;
       background-color: var(--cw);
+      padding: 1.1rem 0;
     }
     &__body {
-      padding: 1.1rem 0;
       justify-content: start;
     }
     &__logo-wrapp {

@@ -11,6 +11,10 @@
       justify-content: center;
       align-items: center;
       width: 7.5625rem;
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
     }
   }
   &__address {
@@ -87,21 +91,14 @@
   }
   &__lang {
     position: relative;
-    a {
-      color: var(--c0);
-      font-size: 0.875rem;
-      line-height: normal;
+    li > a {
       display: flex;
       align-items: center;
       gap: 0.65rem;
-      &::before {
-        content: "";
-        width: 1.0625rem;
-        height: 0.75rem;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        background-image: url("/img/icons/flag_1.jpg");
+      span {
+        color: var(--c0);
+        font-size: 0.875rem;
+        line-height: normal;
       }
       &::after {
         content: "";
@@ -119,7 +116,7 @@
       opacity: 1;
     }
     &:hover a::after {
-      transform: rotateX(-180deg);
+      transform: rotate(-180deg);
     }
     .sub-menu {
       visibility: hidden;
@@ -127,14 +124,18 @@
       position: absolute;
       left: -0.5rem;
       background-color: var(--cw);
-      width: 100%;
       padding: 0.5rem;
       display: flex;
       flex-direction: column;
       gap: 0.5em;
+      transition: all 200ms;
       a {
+        transition: all 200ms;
         &::after {
           display: none;
+        }
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
@@ -152,8 +153,6 @@
     display: flex;
     align-items: center;
     gap: 2.38rem;
-  }
-  &__item {
     a {
       color: var(--cw);
       line-height: normal;

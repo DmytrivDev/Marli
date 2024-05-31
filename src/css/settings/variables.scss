@@ -1,13 +1,15 @@
 body {
   /* Colors */
-  --ct: #484848; /* Text */
-  --ch: #252525; /* Heading */
-  --cw: #fff; /* White */
-  --c0: #000; /* Black */
-  --cb: #037394; /* Blue */
+  --ct: #484848;
+  --ch: #252525;
+  --cw: #fff;
+  --cm: #f2f6f7;
+  --c0: #000;
+  --cb: #037394;
 
   /* Shadow */
   --shadow1: 0 0.313rem 0.625rem 0 rgba(0, 60, 78, 0.15);
+  --shadow2: 0px 0.25rem 2.5rem 0px rgba(0, 0, 0, 0.15);
 
   /* Fonts */
   --ff: "Poppins", sans-serif;

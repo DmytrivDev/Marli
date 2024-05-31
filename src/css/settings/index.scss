@@ -1,3 +1,13 @@
+@media screen and (max-width: 960px) {
+  .hero {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+  }
+}
+
 .section-def {
   padding: 6rem 0;
 }
@@ -10,6 +20,7 @@
   font-size: 2.375rem;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 2.88rem;
 }
 
 .bloc-text {
@@ -52,6 +63,7 @@
   .title-def {
     font-size: 1.5rem;
     line-height: 2.4rem;
+    margin-bottom: 2.44rem;
   }
 
   .bloc-text {

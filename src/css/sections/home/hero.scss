@@ -1,0 +1,106 @@
+.hero {
+  &__body {
+    position: relative;
+  }
+  &__subtitle {
+    color: var(--cb);
+    font-size: 1.125rem;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 23rem;
+    margin-bottom: 3.4rem;
+  }
+  &__item {
+  }
+  &__lead {
+    color: var(--ch);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    &::before {
+      content: "";
+      width: 1.25rem;
+      height: 0.875rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='14' viewBox='0 0 20 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='Vector' d='M20 1.4C20 1.75822 19.8605 2.11662 19.5815 2.38962L8.1529 13.5896C7.875 13.8644 7.50893 14 7.14286 14C6.77679 14 6.41161 13.8633 6.13304 13.5898L0.41875 7.98984C0.139732 7.7175 0 7.35875 0 7C0 6.20025 0.667411 5.6 1.42857 5.6C1.79411 5.6 2.15982 5.73672 2.43839 6.01016L7.14286 10.6225L17.5625 0.41125C17.8393 0.136938 18.2054 0 18.5714 0C19.3348 0 20 0.599375 20 1.4Z' fill='%23037394'/%3E%3C/svg%3E%0A");
+    }
+  }
+  &__text {
+    color: var(--ct);
+    font-size: 0.875rem;
+    line-height: normal;
+  }
+  &__img-wrapp {
+    position: absolute;
+    bottom: -1.7rem;
+    right: -6rem;
+    width: 55.6875rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    &__subtitle {
+      font-size: 0.875rem;
+      line-height: normal;
+      margin-bottom: 0.6rem;
+    }
+    &__title {
+      margin-bottom: 1.45rem;
+    }
+    &__list {
+      width: 21rem;
+      margin-bottom: 2.8rem;
+    }
+    &__lead {
+      font-size: 1rem;
+      gap: 0.4rem;
+      margin-bottom: 0.4rem;
+      &::before {
+        width: 1rem;
+        height: 0.75rem;
+      }
+    }
+    &__text {
+      font-size: 0.8125rem;
+    }
+    &__img-wrapp {
+      bottom: -1.7rem;
+      right: 0;
+      left: 19rem;
+      width: 45rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    &__list {
+      width: auto;
+    }
+    &__img-wrapp {
+      margin-top: 2.8rem;
+      position: relative;
+      bottom: 0;
+      left: -1.5rem;
+      width: 39.25rem;
+    }
+  }
+}

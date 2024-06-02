@@ -11,7 +11,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    li {
+    li > a {
       display: flex;
       justify-content: center;
       align-items: center;

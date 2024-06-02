@@ -10,6 +10,14 @@ body {
   /* Shadow */
   --shadow1: 0 0.313rem 0.625rem 0 rgba(0, 60, 78, 0.15);
   --shadow2: 0px 0.25rem 2.5rem 0px rgba(0, 0, 0, 0.15);
+  --shadow3: 0px 0.313rem 0.625rem 0px rgba(0, 0, 0, 0.5);
+
+  /* Linear-gradient */
+  --gradient1: linear-gradient(
+    246deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
 
   /* Fonts */
   --ff: "Poppins", sans-serif;

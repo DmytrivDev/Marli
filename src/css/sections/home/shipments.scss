@@ -1,0 +1,64 @@
+.shipments {
+  position: relative;
+  background-color: var(--cm);
+  padding: 10.5rem 0 6rem 0;
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  &__info-body {
+    border-radius: 0.625rem;
+    background-color: var(--cb);
+    padding: 3.5rem 4rem;
+  }
+  &__info-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      h3 {
+        color: var(--cw);
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 1.7rem;
+      }
+      p {
+        color: var(--cw);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1rem;
+      }
+    }
+  }
+  &__bottom {
+  }
+  &__body {
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.19rem;
+    align-items: center;
+  }
+  &__img-wrapp {
+  }
+  &__text {
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .shipments {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shipments {
+  }
+}

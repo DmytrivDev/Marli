@@ -11,10 +11,17 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    li > a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    li {
+      width: 8.625rem;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 }
@@ -29,16 +36,16 @@
     &__list {
       justify-content: center;
       flex-wrap: wrap;
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   .companies {
+    &__list {
+      li {
+        width: 6.3125rem;
+      }
+    }
   }
 }

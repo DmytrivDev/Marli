@@ -1,0 +1,153 @@
+.price {
+  padding: 3rem 0 6rem 0;
+  background-color: var(--cm);
+
+  &__body {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.87rem;
+    margin-bottom: 3.3rem;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    background-color: var(--cw);
+    border-radius: 0.3125rem;
+    transition: all 200ms;
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: var(--shadow3);
+    }
+  }
+  &__descript {
+  }
+  &__title-wrapp {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.81rem;
+    h3 {
+      color: var(--ch);
+      font-size: 1.3125rem;
+      font-weight: 500;
+      line-height: 2.1rem;
+    }
+    span {
+      border-radius: 0.1875rem;
+      background-color: var(--cb);
+      padding: 0.1875rem 0.5rem;
+      color: var(--cw);
+      line-height: 1.6rem;
+    }
+  }
+  &__text {
+    color: var(--ct);
+    line-height: 1.6rem;
+  }
+  &__img-wrapp {
+    position: relative;
+    width: 15.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.37rem;
+  }
+  &__text-link {
+    color: var(--cb);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .price {
+    padding: 2.25rem 0 4.5rem 0;
+
+    &__list {
+      gap: 1.25rem;
+      margin-bottom: 2.7rem;
+    }
+    &__title-wrapp {
+      margin-bottom: 0.91rem;
+      h3 {
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+      }
+      span {
+        font-size: 0.875rem;
+        line-height: 1.4rem;
+      }
+    }
+    &__text {
+      color: var(--ct);
+      font-size: 0.875rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .price {
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      justify-items: center;
+      padding: 1.25rem;
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+    &__img-wrapp {
+      width: 15.25rem;
+      img {
+        position: static;
+      }
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .price {
+    &__item {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0.88rem;
+    }
+    &__img-wrapp {
+      margin-top: 1.12rem;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .price {
+    &__item {
+      justify-items: start;
+    }
+    &__img-wrapp {
+      justify-content: start;
+    }
+  }
+}

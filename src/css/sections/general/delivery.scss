@@ -40,10 +40,9 @@
   .delivery {
     &__body {
       padding: 0.95rem 1.5rem;
-      padding-bottom: 14rem;
+      padding-bottom: 15.5rem;
     }
     &__content {
-      // width: 17.6875rem;
       width: 100%;
     }
     &__title {
@@ -51,10 +50,12 @@
       line-height: 2.4rem;
       margin-bottom: 1.8rem;
     }
+    &__text {
+      font-size: 0.875rem;
+      line-height: 1.4875rem;
+    }
     &__img-wrapp {
-      // right: -8.75rem;
       right: 0;
-      bottom: -9rem;
       width: 35rem;
     }
   }
@@ -62,5 +63,10 @@
 
 @media screen and (max-width: 600px) {
   .delivery {
+    &__img-wrapp {
+      width: 27.3125rem;
+      right: -4.95rem;
+      bottom: -7.3rem;
+    }
   }
 }

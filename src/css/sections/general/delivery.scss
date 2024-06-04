@@ -1,0 +1,37 @@
+.delivery {
+  &__body {
+    padding: 2.05rem 2.8rem;
+    border-radius: 0.625rem;
+    background-color: var(--ch);
+    position: relative;
+  }
+  &__content {
+    width: 38.875rem;
+  }
+  &__title {
+    color: var(--cw);
+    font-size: 2.375rem;
+    font-weight: 600;
+    line-height: 3.20625rem;
+    margin-bottom: 1.25rem;
+  }
+  &__text {
+    color: var(--cw);
+    line-height: 1.65rem;
+    margin-bottom: 2.38rem;
+  }
+  &__img-wrapp {
+    position: absolute;
+    right: -8.75rem;
+    bottom: -9rem;
+    width: 43rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

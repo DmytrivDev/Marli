@@ -35,3 +35,32 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .delivery {
+    &__body {
+      padding: 0.95rem 1.5rem;
+      padding-bottom: 14rem;
+    }
+    &__content {
+      // width: 17.6875rem;
+      width: 100%;
+    }
+    &__title {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.8rem;
+    }
+    &__img-wrapp {
+      // right: -8.75rem;
+      right: 0;
+      bottom: -9rem;
+      width: 35rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .delivery {
+  }
+}

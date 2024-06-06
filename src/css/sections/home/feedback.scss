@@ -3,6 +3,9 @@
   &__body {
   }
   &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.88rem;
   }
   &__title {
     margin-bottom: 0;
@@ -14,21 +17,75 @@
   &__swiper {
   }
   &__list {
+    li {
+      border-radius: 0.625rem;
+      background-color: var(--cw);
+      padding: 2.1875rem;
+    }
   }
   &__block {
+    display: flex;
+    align-items: center;
+    gap: 1.375rem;
+    margin-bottom: 0.95rem;
   }
   &__ava-wrapp {
+    flex-shrink: 0;
+    width: 4.125rem;
+    height: 4.125rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__desc {
   }
   &__name {
+    color: var(--ch);
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin-bottom: 0.05rem;
   }
   &__aside {
+    display: flex;
+    align-items: center;
+    gap: 1.05rem;
   }
   &__stars {
+    display: flex;
+    align-items: center;
+    gap: 0.31rem;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0.75rem;
+    }
   }
   &__active {
+    color: var(--ct);
+    font-size: 0.875rem;
+    line-height: 1.4rem;
   }
   &__comment {
+    color: var(--ch);
+    font-size: 0.875rem;
+    line-height: 1.4875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .feedback {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback {
   }
 }

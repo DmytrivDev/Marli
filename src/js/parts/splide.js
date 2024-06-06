@@ -12,7 +12,6 @@ export const instFeedbackSlider = () => {
       updateOnMove: true,
       perPage: 3,
       perMove: 1,
-      // width: '48.5625rem',
       gap: '1.88rem',
       breakpoints: {
         960: {
@@ -21,7 +20,7 @@ export const instFeedbackSlider = () => {
           pagination: true,
           gap: '1rem',
         },
-        780: {
+        760: {
           perPage: 1,
         },
       },

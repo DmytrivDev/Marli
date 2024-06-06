@@ -4,6 +4,7 @@
   }
   &__info {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 2.88rem;
   }
@@ -82,6 +83,29 @@
 
 @media screen and (max-width: 960px) {
   .feedback {
+    &__info {
+      margin-bottom: 2.44rem;
+    }
+    &__list {
+      li {
+        padding: 1.5625rem;
+      }
+    }
+    &__ava-wrapp {
+      width: 3.125rem;
+      height: 3.125rem;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .feedback {
+    &__info {
+      justify-content: start;
+    }
+    &__link {
+      display: none;
+    }
   }
 }
 

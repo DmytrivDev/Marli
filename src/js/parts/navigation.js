@@ -4,10 +4,12 @@ export const openBurger = () => {
   const body = document.querySelector('body');
   const tel = document.querySelector('.address-tel');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('is-opened');
-    mobMenu.classList.toggle('is-opened');
-    tel.classList.toggle('is-hidden');
-    body.classList.toggle('overhide');
-  });
+  if (burger) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-opened');
+      mobMenu.classList.toggle('is-opened');
+      tel.classList.toggle('is-hidden');
+      body.classList.toggle('overhide');
+    });
+  }
 };

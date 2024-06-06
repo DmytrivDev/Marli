@@ -28,11 +28,5 @@ export const instFeedbackSlider = () => {
     };
 
     new Splide(slider, options).mount();
-
-    // splide.on('moved', () => {
-    //   updateSlideNumber(splide);
-    // });
   }
-
-  // arrowsClicker();
 };

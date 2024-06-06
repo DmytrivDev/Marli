@@ -16,11 +16,12 @@ export const instFeedbackSlider = () => {
       breakpoints: {
         960: {
           perPage: 2,
-          arrows: false,
-          pagination: true,
+          perMove: 1,
           gap: '1rem',
         },
         760: {
+          arrows: false,
+          pagination: true,
           perPage: 1,
         },
       },

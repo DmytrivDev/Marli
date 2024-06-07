@@ -8,7 +8,6 @@
   &__item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 2.5rem;
     width: 15rem;
     &:nth-child(odd) {
@@ -98,5 +97,115 @@
     text-align: center;
     font-size: 0.875rem;
     line-height: 1.4375rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .success {
+    &__list {
+      justify-content: start;
+      flex-direction: column;
+      gap: 2.8rem;
+    }
+    &__item {
+      gap: 4.5rem;
+      width: auto;
+      &:nth-child(odd) {
+        flex-direction: row;
+      }
+      &:nth-child(even) {
+        flex-direction: row;
+      }
+    }
+    &__item {
+      &:nth-child(odd) {
+        .success__headline-wrapp {
+          &::after {
+            width: 10rem;
+            bottom: -15%;
+            right: 50%;
+            transform: translateX(50%) rotate(90deg);
+          }
+        }
+      }
+      &:nth-child(even) {
+        .success__headline-wrapp {
+          &::after {
+            width: 10rem;
+            top: auto;
+            bottom: -15%;
+            right: 50%;
+            transform: translateX(50%) rotate(90deg);
+          }
+        }
+      }
+    }
+    &__text-wrapp {
+      text-align: start;
+      max-width: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .success {
+    &__item {
+      gap: 2.05rem;
+    }
+    &__item {
+      &:nth-child(odd) {
+        .success__headline-wrapp {
+          &::after {
+            bottom: -45%;
+          }
+        }
+      }
+      &:nth-child(even) {
+        .success__headline-wrapp {
+          &::after {
+            bottom: -45%;
+          }
+        }
+      }
+    }
+    &__headline-box {
+      width: 6.8125rem;
+      height: 6.8125rem;
+      border: 0.625rem solid var(--cb);
+      h3 {
+        font-size: 1.1875rem;
+        font-weight: 700;
+        line-height: 1.54375rem;
+      }
+      &::before,
+      &::after {
+        width: 7.5625rem;
+        height: 7.5625rem;
+      }
+    }
+    &__text-wrapp {
+      max-width: auto;
+      text-align: start;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .success {
+    &__item {
+      &:nth-child(odd) {
+        .success__headline-wrapp {
+          &::after {
+            bottom: -45%;
+          }
+        }
+      }
+      &:nth-child(even) {
+        .success__headline-wrapp {
+          &::after {
+            bottom: -45%;
+          }
+        }
+      }
+    }
   }
 }

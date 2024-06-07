@@ -1,0 +1,104 @@
+.success {
+  &__body {
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 15rem;
+    &:nth-child(odd) {
+      flex-direction: column;
+    }
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__headline-wrapp {
+  }
+  &__item {
+    &:nth-child(odd) {
+      .success__headline-wrapp {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -2;
+          width: 12rem;
+          height: 0.063rem;
+          bottom: 1rem;
+          right: -10rem;
+          background-color: var(--cb);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    &:nth-child(even) {
+      .success__headline-wrapp {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -2;
+          width: 12rem;
+          height: 0.063rem;
+          top: 0rem;
+          right: -10rem;
+          background-color: var(--cb);
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    &:last-child {
+      .success__headline-wrapp {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .success__headline-wrapp {
+  }
+  &__headline-box {
+    position: relative;
+    width: 12.1875rem;
+    height: 12.1875rem;
+    border: 0.938rem solid var(--cb);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cw);
+    h3 {
+      color: var(--ch);
+      text-align: center;
+      font-size: 2.0625rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 13.5625rem;
+      height: 13.5625rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: var(--cw);
+      z-index: -1;
+      border: 0.063rem solid var(--cb);
+    }
+  }
+  &__text-wrapp {
+    color: var(--ct);
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.4375rem;
+  }
+}

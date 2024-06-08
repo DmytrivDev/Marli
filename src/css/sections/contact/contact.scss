@@ -1,0 +1,127 @@
+.contact {
+  padding: 6rem 0 3rem 0;
+
+  &__body {
+  }
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 36.0625rem;
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.65rem;
+  }
+  &__part {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  &__icon-wrapp {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+    background-color: var(--cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  &__contacts {
+    p {
+      color: var(--ck);
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.06rem;
+    }
+    a {
+      display: block;
+      color: var(--c1);
+      font-weight: 600;
+      line-height: 1.625rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__text-wrapp {
+    margin-bottom: 2.3rem;
+  }
+  &__list-soc {
+    display: flex;
+    align-items: center;
+    gap: 1.35rem;
+  }
+  &__item-soc {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.1875rem;
+      height: 2.1875rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__map-box {
+  }
+  &__map {
+    width: 32.0625rem;
+    height: 22.5rem;
+    border: 0;
+  }
+  &__name-place {
+    color: var(--c1);
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contact {
+    padding: 4.5rem 0 2.5rem 0;
+
+    &__content {
+      width: auto;
+    }
+    &__address {
+      justify-content: start;
+      gap: 3.7rem;
+      margin-bottom: 2.4rem;
+    }
+    &__wrapp {
+      flex-direction: column;
+      justify-content: start;
+    }
+    &__text-wrapp {
+      margin-bottom: 2.05rem;
+    }
+    &__list-soc {
+      margin-bottom: 3.65rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    &__address {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1.55rem;
+      margin-bottom: 2.65rem;
+    }
+    &__map {
+      width: 20.9375rem;
+      height: 14.625rem;
+    }
+  }
+}

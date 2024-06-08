@@ -1,18 +1,19 @@
 body {
   /* Colors */
   --ct: #484848;
+  --ck: #404040;
   --ch: #252525;
   --cw: #fff;
   --cm: #f2f6f7;
   --c0: #000;
+  --c1: #1b1b1b;
   --cb: #037394;
 
   /* Shadow */
   --shadow1: 0 0.313rem 0.625rem 0 rgba(5, 53, 68, 0.435);
   --shadow2: 0 0.25rem 2.5rem 0 rgba(0, 0, 0, 0.15);
   --shadow3: 0 0.313rem 0.625rem 0 rgba(0, 0, 0, 0.5);
-  --shadow4: 0 0 0.938rem 0.625rem rgba(3, 114, 148, 0.242);
-  --shadow5: 0 0 0 0 rgba(255, 255, 255, 0.3);
+  --shadow4: 0 0.313rem 0.625rem 0 rgba(9, 138, 171, 0.598);
 
   /* Linear-gradient */
   --gradient1: linear-gradient(

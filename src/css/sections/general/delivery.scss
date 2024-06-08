@@ -20,6 +20,12 @@
     line-height: 1.65rem;
     margin-bottom: 2.38rem;
   }
+  &__btn {
+    &:hover,
+    &:focus {
+      box-shadow: var(--shadow4);
+    }
+  }
   &__img-wrapp {
     position: absolute;
     right: -8.75rem;

@@ -5,6 +5,8 @@
 @import url('./settings/index.scss');
 @import url('./settings/general.scss');
 
+@import url('./sections/embeded/embeded.scss');
+
 /* General-sections */
 @import url('./sections/general/companies.scss');
 @import url('./sections/general/overview.scss');
@@ -33,9 +35,6 @@
 /* Contact */
 @import url('./sections/contact/contact.scss');
 @import url('./sections/contact/delivery.scss');
-
-/* Politique */
-@import url('./sections/politique/politique.scss');
 
 /* Error */
 @import url('./sections/error/error.scss');

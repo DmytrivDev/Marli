@@ -1,4 +1,4 @@
-.footer {
+.footer-h {
   padding: 3.12rem 0;
   background-color: var(--cb);
 
@@ -37,10 +37,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      img {
+        width: 2rem !important;
+        height: 1.5rem !important;
       }
     }
   }
@@ -98,7 +97,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .footer {
+  .footer-h {
     padding-bottom: 1.25rem;
 
     &__body {
@@ -150,7 +149,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .footer {
+  .footer-h {
     &__body {
       flex-direction: column;
       justify-content: start;

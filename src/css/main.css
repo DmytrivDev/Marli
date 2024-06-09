@@ -4,7 +4,6 @@
 @import url('./settings/variables.scss');
 @import url('./settings/index.scss');
 @import url('./settings/general.scss');
-
 @import url('./sections/embeded/embeded.scss');
 
 /* General-sections */
@@ -36,9 +35,36 @@
 @import url('./sections/contact/contact.scss');
 @import url('./sections/contact/delivery.scss');
 
+/* Calculatorwrapp */
+@import url('./sections/calcwrapp/calcstep1.scss');
+@import url('./sections/calcwrapp/calcsteps.scss');
+@import url('./sections/calcwrapp/calcorder.scss');
+
+/* Calculator1 */
+@import url('./sections/calcstep1/calcstep1.scss');
+
+/* Calculator2 */
+@import url('./sections/calcstep2/calcstep2.scss');
+
+/* Calculator3 */
+@import url('./sections/calcstep3/calcstep3.scss');
+
+/* Calculator4 */
+@import url('./sections/calcstep4/calcstep4.scss');
+
+/* Calculator5 */
+@import url('./sections/calcstep5/calcstep5.scss');
+
+/* Calculator6 */
+@import url('./sections/calcstep6/calcstep6.scss');
+
+/* Calculatororder */
+@import url('./sections/calcorder/calcorder.scss');
+
 /* Error */
 @import url('./sections/error/error.scss');
 @import url('./sections/error/delivery.scss');
 
 /* Footer */
-@import url('./sections/footer/footer.scss');
+@import url('./sections/footer/home/footer.scss');
+@import url('./sections/footer/calc/footer.scss');

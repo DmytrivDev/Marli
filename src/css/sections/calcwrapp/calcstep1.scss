@@ -1,0 +1,23 @@
+.calcstep1 {
+  padding: 3.75rem 0;
+  background-color: var(--cx);
+
+  &__body {
+    border-radius: 0.625rem;
+    background-color: var(--cw);
+    padding: 2.65rem 3.12rem 3.12rem 3.12rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .calcstep1 {
+    background-color: transparent;
+    padding: 4.44rem 0 3.75rem 0;
+
+    &__body {
+      background-color: transparent;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+}

@@ -84,11 +84,10 @@
     display: flex;
     align-items: center;
     gap: 0.38rem;
-    div {
+    span {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 1rem;
     }
   }
   &__lang {

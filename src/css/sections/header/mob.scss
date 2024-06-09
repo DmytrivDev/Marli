@@ -1,0 +1,36 @@
+.mob-menu {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .mob-menu {
+    display: block;
+    position: absolute;
+    background-color: var(--cb);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    transition: all 200ms;
+    transform: translateY(-100%);
+    &.is-opened {
+      transform: translateY(0);
+    }
+    &__body {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: var(--cw);
+      letter-spacing: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mob-menu {
+  }
+}

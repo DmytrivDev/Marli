@@ -12,7 +12,9 @@
 @import url('./sections/general/delivery.scss');
 
 /* Header */
-@import url('./sections/header/header.scss');
+@import url('./sections/header/top.scss');
+@import url('./sections/header/bottom.scss');
+@import url('./sections/header/mob.scss');
 
 /* Home */
 @import url('./sections/home/hero.scss');

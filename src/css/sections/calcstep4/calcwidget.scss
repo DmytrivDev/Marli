@@ -16,7 +16,13 @@
           border: 0.125rem solid var(--cb);
         }
         span {
-          color: var(--cb);
+          color: transparent;
+          width: 0.625rem;
+          height: 0.5rem;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8' fill='none'%3E%3Cpath d='M10 0.8C10 1.0047 9.93025 1.2095 9.79074 1.3655L4.07645 7.7655C3.9375 7.9225 3.75446 8 3.57143 8C3.38839 8 3.2058 7.92188 3.06652 7.76562L0.209375 4.56563C0.0698661 4.41 0 4.205 0 4C0 3.543 0.333705 3.2 0.714286 3.2C0.897054 3.2 1.07991 3.27813 1.2192 3.43438L3.57143 6.07L8.78125 0.235C8.91964 0.07825 9.10268 0 9.28571 0C9.66741 0 10 0.3425 10 0.8Z' fill='%23037394'/%3E%3C/svg%3E");
         }
         &::before {
           z-index: 3;
@@ -25,6 +31,16 @@
       }
       .calcwidget__text {
         color: var(--ck);
+      }
+    }
+    &:nth-child(4) {
+      .calcwidget__box {
+        span {
+          width: auto;
+          height: auto;
+          background: none;
+          color: var(--cb);
+        }
       }
     }
   }

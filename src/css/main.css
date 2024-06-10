@@ -62,7 +62,7 @@
 @import url('./sections/calcstep6/calcwidget.scss');
 
 /* Calculator-order */
-@import url('./sections/calcorder/calcwidget.scss');
+@import url('./sections/calcorder/calcorder.scss');
 
 /* Error */
 @import url('./sections/error/error.scss');

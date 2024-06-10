@@ -1,0 +1,38 @@
+.calcorder {
+  padding: 3.75rem 0;
+
+  &__wrapp {
+    display: flex;
+    align-items: start;
+    gap: 1.88rem;
+  }
+  &__body {
+    width: 100%;
+    border-radius: 0.625rem;
+    background-color: var(--cw);
+    padding: 2.65rem 3.12rem 3.12rem 3.12rem;
+  }
+  &__sidebar {
+    flex-shrink: 0;
+    width: 23.25rem;
+    border-radius: 0.625rem;
+    background-color: var(--cw);
+    padding: 2.65rem 3.12rem 2.8rem 3.12rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .calcorder {
+    padding: 4.44rem 0 3.75rem 0;
+
+    &__body {
+      display: none;
+    }
+    &__sidebar {
+      width: 100%;
+      background-color: transparent;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+}

@@ -8,6 +8,10 @@
   }
 }
 
+.color-page {
+  background-color: var(--cx);
+}
+
 .section-def {
   padding: 6rem 0;
 }
@@ -53,6 +57,10 @@
 }
 
 @media screen and (max-width: 960px) {
+  .color-page {
+    background-color: transparent;
+  }
+
   .section-def {
     padding: 4.5rem 0;
   }

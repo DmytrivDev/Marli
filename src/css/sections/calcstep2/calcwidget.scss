@@ -1,0 +1,25 @@
+.calcstep2-widget {
+  .calcwidget__body {
+    .calcwidget__part {
+      &:nth-child(1),
+      &:nth-child(2) {
+        .calcwidget__box {
+          div {
+            border: 0.125rem solid var(--cb);
+          }
+          span {
+            color: var(--cb);
+          }
+          &::before {
+            width: 11.7rem;
+            z-index: 5;
+            background-color: var(--cb);
+          }
+        }
+        .calcwidget__text {
+          color: var(--ck);
+        }
+      }
+    }
+  }
+}

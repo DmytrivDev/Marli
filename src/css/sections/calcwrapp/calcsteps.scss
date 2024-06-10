@@ -1,0 +1,56 @@
+.calcsteps {
+  padding: 3.75rem 0;
+
+  &__widget {
+    border-radius: 0.625rem;
+    background-color: var(--cw);
+    padding: 1.55rem 1.5rem 1.2rem 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  &__wrapp {
+    display: flex;
+    align-items: start;
+    gap: 1.88rem;
+  }
+  &__body {
+    width: 100%;
+    border-radius: 0.625rem;
+    background-color: var(--cw);
+    padding: 2.65rem 3.12rem 3.12rem 3.12rem;
+  }
+  &__sidebar {
+    flex-shrink: 0;
+    width: 23.25rem;
+    border-radius: 0.625rem;
+    background-color: var(--cw);
+    padding: 2.65rem 3.12rem 2.8rem 3.12rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .calcsteps {
+    padding: 2.5rem 0 3.75rem 0;
+
+    &__widget,
+    &__body,
+    &__sidebar {
+      background-color: transparent;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    &__widget {
+      margin-bottom: 0;
+    }
+    &__wrapp {
+      flex-direction: column;
+      gap: 0;
+    }
+    &__body {
+      padding-top: 1.95rem;
+    }
+    &__sidebar {
+      display: none;
+    }
+  }
+}

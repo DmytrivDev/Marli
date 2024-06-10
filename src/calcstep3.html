@@ -12,8 +12,22 @@
     <div class="wrapper">
       <load src="partials/header/calc/header.html" />
 
-      <main class="main">
-        <load src="partials/calcstep3/calcstep3.html" />
+      <main class="main color-page">
+        <div class="calcsteps">
+          <div class="container">
+            <div class="calcsteps__widget calcstep3-widget">
+              <load src="partials/general/calcwidget.html" />
+            </div>
+            <div class="calcsteps__wrapp">
+              <div class="calcsteps__body">
+                <load src="partials/calcstep3/body.html" />
+              </div>
+              <div class="calcsteps__sidebar">
+                <load src="partials/calcstep3/sidebar.html" />
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <load src="partials/footer/calc/footer.html" />

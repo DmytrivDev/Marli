@@ -30,6 +30,10 @@
           z-index: 1;
           background-color: var(--cb);
         }
+        &::after {
+          z-index: 1;
+          background-color: var(--cb);
+        }
       }
       .calcwidget__text {
         color: var(--ck);

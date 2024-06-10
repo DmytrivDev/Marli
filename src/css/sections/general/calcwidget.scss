@@ -67,3 +67,45 @@
     line-height: normal;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .calcwidget {
+    &__part {
+      &:first-child {
+        .calcwidget__box {
+          &::before {
+            display: block;
+          }
+        }
+      }
+      &:last-child {
+        .calcwidget__box {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100%;
+            width: 16rem;
+            height: 0.125rem;
+            border-radius: 0.125rem;
+            background-color: var(--cr);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .calcwidget {
+    &__text {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+  }
+}

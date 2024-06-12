@@ -18,6 +18,9 @@
 .section-other {
   padding: 3rem 0;
 }
+.section-margin {
+  margin-bottom: 4.5rem;
+}
 
 .title-def {
   color: var(--ch);
@@ -31,6 +34,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 2.5rem;
 }
 
 .bloc-text {
@@ -88,11 +92,18 @@
   .section-other {
     padding: 2.25rem 0;
   }
+  .section-margin {
+    margin-bottom: 4rem;
+  }
 
   .title-def {
     font-size: 1.5rem;
     line-height: 2.4rem;
     margin-bottom: 2.4rem;
+  }
+  .title-calc {
+    line-height: 2.4rem;
+    margin-bottom: 1.5rem;
   }
 
   .bloc-text {
@@ -103,9 +114,8 @@
     }
   }
 
-  .btn-def {
-    font-size: 0.875rem;
-  }
+  .btn-def,
+  .btn-sec,
   .btn-back {
     font-size: 0.875rem;
   }

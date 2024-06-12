@@ -44,25 +44,36 @@
 @import url('./sections/calcwrapp/calcorder.scss');
 
 /* Calculator1 */
-@import url('./sections/calcstep1/calcstep1.scss');
+@import url('./sections/calcstep1/body.scss');
 
 /* Calculator2 */
 @import url('./sections/calcstep2/calcwidget.scss');
+@import url('./sections/calcstep2/body.scss');
+@import url('./sections/calcstep2/sidebar.scss');
 
 /* Calculator3 */
 @import url('./sections/calcstep3/calcwidget.scss');
+@import url('./sections/calcstep3/body.scss');
+@import url('./sections/calcstep3/sidebar.scss');
 
 /* Calculator4 */
 @import url('./sections/calcstep4/calcwidget.scss');
+@import url('./sections/calcstep4/body.scss');
+@import url('./sections/calcstep4/sidebar.scss');
 
 /* Calculator5 */
 @import url('./sections/calcstep5/calcwidget.scss');
+@import url('./sections/calcstep5/body.scss');
+@import url('./sections/calcstep5/sidebar.scss');
 
 /* Calculator6 */
 @import url('./sections/calcstep6/calcwidget.scss');
+@import url('./sections/calcstep6/body.scss');
+@import url('./sections/calcstep6/sidebar.scss');
 
 /* Calculator-order */
-@import url('./sections/calcorder/calcorder.scss');
+@import url('./sections/calcorder/body.scss');
+@import url('./sections/calcorder/sidebar.scss');
 
 /* Error */
 @import url('./sections/error/error.scss');

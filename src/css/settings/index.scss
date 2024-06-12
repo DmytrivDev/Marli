@@ -39,8 +39,8 @@
   }
 }
 
-.btn-def {
-  width: fit-content;
+.btn-def,
+.btn-sec {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +52,31 @@
   transition: all 200ms;
   &:hover,
   &:focus {
+    background-color: var(--cn);
+  }
+}
+.btn-def {
+  width: fit-content;
+}
+.btn-sec {
+  width: 100%;
+}
+.btn-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cb);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1.25rem 1.875rem;
+  border-radius: 0.3125rem;
+  border: 0.063rem solid #037394;
+  transition: all 200ms;
+  &:hover,
+  &:focus {
+    color: var(--cw);
     background-color: var(--cn);
   }
 }

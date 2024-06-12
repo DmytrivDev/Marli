@@ -24,13 +24,13 @@
   font-size: 2.375rem;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 2.88rem;
+  margin-bottom: 2.8rem;
 }
 
 .bloc-text {
   color: var(--ct);
   font-size: 0.938em;
-  line-height: 1.594em;
+  line-height: 1.65em;
   p {
     margin-top: 0.7em;
     &:first-child {
@@ -52,7 +52,7 @@
   transition: all 200ms;
   &:hover,
   &:focus {
-    box-shadow: var(--shadow1);
+    background-color: var(--cn);
   }
 }
 
@@ -71,12 +71,12 @@
   .title-def {
     font-size: 1.5rem;
     line-height: 2.4rem;
-    margin-bottom: 2.44rem;
+    margin-bottom: 2.4rem;
   }
 
   .bloc-text {
     font-size: 0.875em;
-    line-height: 1.488em;
+    line-height: 1.785em;
     p {
       margin-top: 0.6em;
     }

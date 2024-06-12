@@ -1,9 +1,13 @@
 .success {
   &__body {
   }
+  &__title {
+    // margin-bottom: 3.5rem;
+  }
   &__list {
     display: flex;
     justify-content: space-between;
+    padding: 0.85rem 0;
   }
   &__item {
     display: flex;
@@ -102,10 +106,14 @@
 
 @media screen and (max-width: 960px) {
   .success {
+    &__title {
+      // margin-bottom: 3rem;
+    }
     &__list {
       justify-content: start;
       flex-direction: column;
       gap: 2.8rem;
+      padding: 0.85rem 0 0.85rem 0.85rem;
     }
     &__item {
       gap: 4.5rem;
@@ -149,10 +157,11 @@
 
 @media screen and (max-width: 600px) {
   .success {
-    &__item {
-      gap: 2.05rem;
+    &__list {
+      padding: 0.45rem 0 0.45rem 0.45rem;
     }
     &__item {
+      gap: 2.05rem;
       &:nth-child(odd) {
         .success__headline-wrapp {
           &::after {
@@ -186,26 +195,6 @@
     &__text-wrapp {
       max-width: auto;
       text-align: start;
-    }
-  }
-}
-@media screen and (max-width: 600px) {
-  .success {
-    &__item {
-      &:nth-child(odd) {
-        .success__headline-wrapp {
-          &::after {
-            bottom: -45%;
-          }
-        }
-      }
-      &:nth-child(even) {
-        .success__headline-wrapp {
-          &::after {
-            bottom: -45%;
-          }
-        }
-      }
     }
   }
 }

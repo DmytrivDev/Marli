@@ -1,21 +1,21 @@
 body {
   /* Colors */
+  --c1: #1b1b1b;
+  --c0: #000;
+  --ch: #252525;
+  --ck: #404040;
   --ct: #484848;
   --cr: #a9a7a7;
-  --ck: #404040;
-  --ch: #252525;
-  --cw: #fff;
+  --cg: #cce2e9;
   --cm: #f2f6f7;
   --cx: #f4f4f4;
-  --c0: #000;
-  --c1: #1b1b1b;
+  --cw: #fff;
   --cb: #037394;
+  --cn: #0484aa;
 
   /* Shadow */
-  --shadow1: 0 0.313rem 0.625rem 0 rgba(5, 53, 68, 0.435);
+  --shadow1: 0.313rem 0.625rem 1.875rem 0 rgba(12, 43, 84, 0.1);
   --shadow2: 0 0.25rem 2.5rem 0 rgba(0, 0, 0, 0.15);
-  --shadow3: 0 0.313rem 0.625rem 0 rgba(0, 0, 0, 0.5);
-  --shadow4: 0 0.313rem 0.625rem 0 rgba(9, 138, 171, 0.598);
 
   /* Linear-gradient */
   --gradient1: linear-gradient(

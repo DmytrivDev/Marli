@@ -16,6 +16,11 @@
       img {
         width: 100% !important;
         height: auto !important;
+        transition: all 200ms;
+      }
+      &:hover img,
+      &:focus img {
+        filter: brightness(105%) saturate(131%);
       }
     }
   }
@@ -161,10 +166,14 @@
       justify-content: start;
     }
     &__logo-wrapp {
+      margin-right: auto;
       a {
         width: 5.5rem;
+        &:hover img,
+        &:focus img {
+          filter: none;
+        }
       }
-      margin-right: auto;
     }
     &__address {
       margin-right: 4rem;

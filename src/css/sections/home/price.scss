@@ -21,7 +21,7 @@
     transition: all 200ms;
     &:hover {
       transform: scale(1.01);
-      box-shadow: var(--shadow3);
+      box-shadow: var(--shadow1);
     }
   }
   &__descript {
@@ -146,8 +146,13 @@
     &__item {
       justify-items: start;
     }
+    &__flexbox {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+    }
     &__img-wrapp {
-      justify-content: start;
+      justify-content: end;
     }
   }
 }

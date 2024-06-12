@@ -87,6 +87,7 @@
   width: 2.75rem !important;
   height: 2.75rem !important;
   background-color: var(--cb) !important;
+  transition: all 200ms !important;
 }
 .splide__arrow--next {
   transform: translate(100%, -50%) !important;
@@ -120,8 +121,13 @@
 
 @media screen and (max-width: 960px) {
   .feedback {
+    padding-bottom: 9.05rem;
+
     &__info {
       margin-bottom: 2.44rem;
+    }
+    &__title {
+      text-align: center;
     }
     &__list {
       li {
@@ -135,7 +141,7 @@
   }
 
   .splide__pagination {
-    transform: translateY(3rem) !important;
+    transform: translateY(4.5rem) !important;
   }
   .splide__pagination__page {
     opacity: 1 !important;
@@ -145,7 +151,7 @@
   }
   .splide__pagination__page.is-active {
     border: 0.125rem solid var(--cb) !important;
-    background-color: var(--cw) !important;
+    background-color: transparent !important;
   }
   .splide__pagination li {
     display: flex !important;
@@ -157,7 +163,7 @@
 @media screen and (max-width: 760px) {
   .feedback {
     &__info {
-      justify-content: start;
+      justify-content: center;
     }
     &__link {
       display: none;

@@ -21,10 +21,6 @@
     margin-bottom: 2.38rem;
   }
   &__btn {
-    &:hover,
-    &:focus {
-      box-shadow: var(--shadow4);
-    }
   }
   &__img-wrapp {
     position: absolute;
@@ -46,28 +42,30 @@
   .delivery {
     &__body {
       padding: 0.95rem 1.5rem;
-      padding-bottom: 15.5rem;
+      padding-bottom: 12.5rem;
     }
     &__content {
-      width: 100%;
+      width: auto;
+      max-width: 25rem;
     }
     &__title {
       font-size: 1.5rem;
       line-height: 2.4rem;
-      margin-bottom: 1.8rem;
+      margin-bottom: 1rem;
     }
     &__text {
       font-size: 0.875rem;
       line-height: 1.4875rem;
     }
     &__img-wrapp {
-      right: 0;
-      width: 35rem;
+      right: -7rem;
+      bottom: -7rem;
+      width: 38rem;
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .delivery {
     &__img-wrapp {
       width: 27.3125rem;
@@ -75,4 +73,7 @@
       bottom: -7.3rem;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
 }

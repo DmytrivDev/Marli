@@ -55,9 +55,6 @@
     &:hover .shipments__img-wrapp {
       transform: scale(1.1);
     }
-    &:hover {
-      box-shadow: var(--shadow3);
-    }
   }
   &__img-wrapp {
     display: flex;
@@ -120,13 +117,11 @@
       &:hover .shipments__img-wrapp {
         transform: none;
       }
-      &:hover {
-        box-shadow: none;
-      }
     }
   }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 540px) {
   .shipments {
     &__info-list {
       display: grid;

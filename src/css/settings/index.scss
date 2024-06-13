@@ -71,6 +71,7 @@
   width: fit-content;
 }
 .btn-back {
+  display: none;
   margin-top: 1.2rem;
   color: var(--cb);
   background-color: var(--cw);
@@ -119,5 +120,8 @@
   .btn-sec,
   .btn-back {
     font-size: 0.875rem;
+  }
+  .btn-back {
+    display: flex;
   }
 }

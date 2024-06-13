@@ -1,5 +1,8 @@
 .calcpay {
   &__body {
+    .sidebar-total {
+      display: none;
+    }
   }
   &__list {
     display: flex;
@@ -46,8 +49,8 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.1875rem;
+        height: 1.1875rem;
         border-radius: 50%;
         background-color: transparent;
         transition: all 200ms;
@@ -95,11 +98,31 @@
 
 @media screen and (max-width: 960px) {
   .calcstep6-sidebar {
+    padding-top: 1.95rem;
     display: block;
     width: 100%;
   }
 
   .calcpay {
+    &__body {
+      .sidebar-total {
+        display: block;
+        margin-top: 0;
+        padding: 2rem 0 1.5rem 0;
+        border-top: 0.063rem solid var(--cv);
+        h3 {
+          font-size: 0.875rem;
+          line-height: normal;
+        }
+        p {
+          font-size: 1.125rem;
+        }
+        span {
+          font-size: 0.875rem;
+          line-height: normal;
+        }
+      }
+    }
     &__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -116,7 +139,7 @@
       }
     }
     &__text {
-      margin-bottom: 1.63rem;
+      margin-bottom: 2rem;
     }
   }
 }

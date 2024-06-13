@@ -1,4 +1,12 @@
 .calcstep2-sidebar {
+  .sidebar-load,
+  .sidebar-unload,
+  .sidebar-shipment {
+    button {
+      display: none;
+    }
+  }
+
   .load-personal {
     display: none;
   }

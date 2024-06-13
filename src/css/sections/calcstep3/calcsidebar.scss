@@ -1,4 +1,11 @@
 .calcstep3-sidebar {
+  .sidebar-load,
+  .sidebar-unload {
+    button {
+      display: none;
+    }
+  }
+
   .load-personal {
     display: none;
   }

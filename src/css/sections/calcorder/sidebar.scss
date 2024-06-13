@@ -1,0 +1,34 @@
+.calcdone {
+  &__body {
+    .btn-sec {
+      display: none;
+    }
+  }
+  &__title {
+    color: var(--ch);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.8rem;
+  }
+  &__text {
+    color: var(--ct);
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .calcdone {
+    &__body {
+      .btn-sec {
+        display: flex;
+      }
+    }
+    &__title {
+      line-height: 2.4rem;
+    }
+    &__text {
+      margin-bottom: 2.7rem;
+    }
+  }
+}

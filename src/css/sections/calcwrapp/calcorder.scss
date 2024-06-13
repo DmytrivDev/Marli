@@ -11,6 +11,11 @@
     border-radius: 0.625rem;
     background-color: var(--cw);
     padding: 2.65rem 3.12rem 3.12rem 3.12rem;
+    .sidebar-block {
+      button {
+        display: none;
+      }
+    }
   }
   &__sidebar {
     flex-shrink: 0;

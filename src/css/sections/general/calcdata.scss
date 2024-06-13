@@ -1,0 +1,35 @@
+.calcdata {
+  &__body {
+  }
+  &__sect1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.25rem;
+    border-bottom: 0.063rem solid var(--cv);
+    padding-bottom: 2.6rem;
+  }
+  &__sect2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.25rem;
+    padding: 2.6rem 0;
+  }
+  &__sect3 {
+    border-top: 0.063rem solid var(--cv);
+    padding-top: 2.6rem;
+    .sidebar-total {
+      margin: 0;
+    }
+  }
+  &__part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .calcdata__body {
+    display: none;
+  }
+}

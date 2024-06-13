@@ -1,4 +1,10 @@
 .calcstep4-sidebar {
+  .sidebar-unload {
+    button {
+      display: none;
+    }
+  }
+
   .load-region {
     display: none;
   }

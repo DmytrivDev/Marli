@@ -69,7 +69,7 @@
 
 /* Calculator6 */
 @import url('./sections/calcstep6/calcwidget.scss');
-@import url('./sections/calcstep6/sidebar.scss');
+@import url('./sections/calcstep6/calcsidebar.scss');
 @import url('./sections/calcstep6/body.scss');
 
 /* Calculator-order */

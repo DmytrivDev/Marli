@@ -1,0 +1,130 @@
+.calcpay {
+  &__body {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 0.95rem;
+  }
+  &__item {
+    border-radius: 0.3125rem;
+    border: 0.063rem solid var(--cs);
+    overflow: hidden;
+    label {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 0.5rem 1rem 1.94rem;
+    }
+    input {
+      display: none;
+      &:checked + .calcpay__box span {
+        &::before {
+          background-color: var(--cb);
+        }
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    span {
+      position: relative;
+      flex-shrink: 0;
+      width: 1.5625rem;
+      height: 1.5625rem;
+      border-radius: 50%;
+      border: 0.063rem solid var(--cy);
+      margin-right: 0.94rem;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: all 200ms;
+      }
+    }
+    h3 {
+      color: var(--ch);
+      font-weight: 500;
+      line-height: normal;
+      margin-left: 0.63rem;
+    }
+  }
+  &__icon-wrapp {
+    width: 1.5625rem;
+    height: 1.125rem;
+    border-radius: 0.125rem;
+    background-color: var(--cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img-box {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    img {
+      width: 1.5625rem;
+      height: 1.125rem;
+    }
+  }
+  &__decs {
+    margin-top: 0.38rem;
+    display: block;
+    color: var(--ct);
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  &__text {
+    color: var(--ct);
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .calcstep6-sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  .calcpay {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 1.25rem;
+    }
+    &__item {
+      label {
+        padding: 1rem 1.3rem;
+      }
+    }
+    &__box {
+      h3 {
+        font-size: 0.875rem;
+      }
+    }
+    &__text {
+      margin-bottom: 1.63rem;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .calcpay {
+    &__list {
+      display: flex;
+    }
+  }
+}

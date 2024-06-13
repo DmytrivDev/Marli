@@ -11,6 +11,7 @@
 @import url('./sections/general/overview.scss');
 @import url('./sections/general/delivery.scss');
 @import url('./sections/general/calcwidget.scss');
+@import url('./sections/general/calcsidebar.scss');
 
 /* Header */
 @import url('./sections/header/top.scss');
@@ -48,28 +49,28 @@
 
 /* Calculator2 */
 @import url('./sections/calcstep2/calcwidget.scss');
+@import url('./sections/calcstep2/calcsidebar.scss');
 @import url('./sections/calcstep2/body.scss');
-@import url('./sections/calcstep2/sidebar.scss');
 
 /* Calculator3 */
 @import url('./sections/calcstep3/calcwidget.scss');
+@import url('./sections/calcstep3/calcsidebar.scss');
 @import url('./sections/calcstep3/body.scss');
-@import url('./sections/calcstep3/sidebar.scss');
 
 /* Calculator4 */
 @import url('./sections/calcstep4/calcwidget.scss');
+@import url('./sections/calcstep4/calcsidebar.scss');
 @import url('./sections/calcstep4/body.scss');
-@import url('./sections/calcstep4/sidebar.scss');
 
 /* Calculator5 */
 @import url('./sections/calcstep5/calcwidget.scss');
+@import url('./sections/calcstep5/calcsidebar.scss');
 @import url('./sections/calcstep5/body.scss');
-@import url('./sections/calcstep5/sidebar.scss');
 
 /* Calculator6 */
 @import url('./sections/calcstep6/calcwidget.scss');
-@import url('./sections/calcstep6/body.scss');
 @import url('./sections/calcstep6/sidebar.scss');
+@import url('./sections/calcstep6/body.scss');
 
 /* Calculator-order */
 @import url('./sections/calcorder/body.scss');

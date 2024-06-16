@@ -19,6 +19,7 @@
     align-items: center;
   }
   &__loading-box {
+    cursor: pointer;
     position: relative;
     flex-shrink: 0;
     width: 14.875rem;

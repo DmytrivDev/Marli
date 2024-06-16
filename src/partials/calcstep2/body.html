@@ -1,10 +1,78 @@
 <div class="shipment-cl">
-  <div class="section-margin">
+  <div class="shipment-cl__body">
     <h2 class="title-calc">Enter shipment</h2>
-  </div>
 
-  <div class="section-margin">
-    <h2 class="title-calc">Additional information</h2>
+    <form class="shipment-cl__form" id="shipmentForm">
+      <div class="shipment-cl__box">
+        <label class="input-def check-input">
+          <span>Quantity</span>
+          <input type="text" name="ship-quantity" id="ship-quantity" />
+        </label>
+        <label class="input-def">
+          <div class="shipment-cl__wrapp">
+            <span>Shipment (what has to be sent?)</span>
+            <a href="#">Forbidden goods</a>
+            <input type="text" name="ship-forbidden" id="ship-forbidden" />
+          </div>
+        </label>
+      </div>
+
+      <div class="shipment-cl__colomn">
+        <div class="shipment-cl__row">
+          <p>
+            <span>Weight</span>
+            <span>Weight (kg per item)</span>
+          </p>
+          <label class="input-def">
+            <input type="text" name="ship-forbidden" id="ship-weight" />
+          </label>
+          <p>(kg per item)</p>
+        </div>
+
+        <div class="shipment-cl__row">
+          <p>
+            <span>Length</span>
+            <span>Length (cm per item)</span>
+          </p>
+          <label class="input-def">
+            <input type="text" name="ship-forbidden" id="ship-length" />
+          </label>
+          <p>(cm per item)</p>
+        </div>
+
+        <div class="shipment-cl__row">
+          <p>
+            <span>Width</span>
+            <span>Width (cm per item)</span>
+          </p>
+          <label class="input-def">
+            <input type="text" name="ship-forbidden" id="ship-width" />
+          </label>
+          <p>(cm per item)</p>
+        </div>
+
+        <div class="shipment-cl__row">
+          <p>
+            <span>Height</span>
+            <span>Height (cm per item)</span>
+          </p>
+          <label class="input-def">
+            <input type="text" name="ship-forbidden" id="ship-height" />
+          </label>
+          <p>(cm per item)</p>
+        </div>
+
+        <button type="button" class="shipment-cl__btn">+ Add item</button>
+      </div>
+
+      <h2 class="title-calc">Additional information</h2>
+      <textarea
+        class="shipment-cl__textarea"
+        name="ship-textarea"
+        id="ship-textarea"
+        placeholder="If needed, please give some important hints for the transport"
+      ></textarea>
+    </form>
   </div>
 
   <a href="./calcstep3.html" class="btn-sec">Continue to loading address</a>

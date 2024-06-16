@@ -1,0 +1,125 @@
+.shipment-cl {
+  &__body {
+    margin-bottom: 3.12rem;
+  }
+  &__form {
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: 18.6rem 1fr;
+    align-items: center;
+    gap: 1.55rem;
+    margin-bottom: 1.88rem;
+  }
+  &__wrapp {
+    position: relative;
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: var(--cb);
+      font-size: 0.875rem;
+      line-height: normal;
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  &__colomn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.55rem;
+    margin-bottom: 4.5rem;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: 3.2rem 13.875rem 7rem;
+    align-items: center;
+    gap: 1.55rem;
+    p {
+      span {
+        &:last-child {
+          display: none;
+        }
+      }
+      color: var(--ck);
+      font-size: 0.875rem;
+      line-height: normal;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: -1.88rem;
+    right: 0;
+    color: var(--cb);
+    font-size: 0.875rem;
+    line-height: normal;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+  &__textarea {
+    padding: 1.4rem 1.6rem;
+    width: 100%;
+    height: 10.5rem;
+    border-radius: 0.3125rem;
+    border: 0.063rem solid var(--cs);
+    color: var(--ct);
+    font-family: Poppins;
+    font-size: 0.875rem;
+    line-height: normal;
+    resize: none;
+    transition: all 200ms;
+    &:focus {
+      border: 0.063rem solid var(--cb);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .shipment-cl {
+    &__box {
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: 1.95rem;
+      margin-bottom: 1.88rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shipment-cl {
+    &__box {
+      margin-bottom: 3.88rem;
+    }
+    &__wrapp {
+      a {
+        top: auto;
+        bottom: -2rem;
+      }
+    }
+    &__colomn {
+      gap: 1.88rem;
+      margin-bottom: 4.13rem;
+    }
+    &__row {
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: 0.88rem;
+      p {
+        span {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

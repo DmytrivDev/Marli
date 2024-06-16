@@ -1,6 +1,89 @@
 <div class="loading-cl">
-  <div class="section-margin">
+  <div class="loading-cl__body">
     <h2 class="title-calc">Enter shipment</h2>
+
+    <form class="loading-cl__form" id="loadingForm">
+      <label class="input-def check-input">
+        <span>Company</span>
+        <input type="text" name="loading-company" id="loading-company" />
+      </label>
+
+      <div class="loading-cl__box">
+        <label class="input-def">
+          <span>First name</span>
+          <input type="text" name="loading-firstname" id="loading-firstname" />
+        </label>
+
+        <label class="input-def">
+          <span>Last name</span>
+          <input type="text" name="loading-lastname" id="loading-lastname" />
+        </label>
+      </div>
+
+      <label class="input-def">
+        <span>Street + house no.</span>
+        <input type="text" name="loading-street" id="loading-street" />
+      </label>
+
+      <label class="input-def">
+        <span>Address in addition</span>
+        <input type="text" name="loading-address" id="loading-address" />
+      </label>
+
+      <div class="loading-cl__loading">
+        <div class="loading-cl__loading-box">
+          <span class="loading-cl__loading-name">AT Austria</span>
+          <ul class="loading-cl__loading-list">
+            <li>
+              <label>
+                <span>AT Austria</span>
+                <input
+                  type="radio"
+                  name="loading-loading"
+                  id="loading-loading"
+                />
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>AT Austria</span>
+                <input
+                  type="radio"
+                  name="loading-loading"
+                  id="loading-loading"
+                />
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>AT Austria</span>
+                <input
+                  type="radio"
+                  name="loading-loading"
+                  id="loading-loading"
+                />
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <label class="loading-cl__loading-code">
+          <input type="text" name="loading-code" id="loading-code" />
+        </label>
+      </div>
+
+      <label class="input-def">
+        <span>Phone number</span>
+        <input type="number" name="loading-phone" id="loading-phone" />
+      </label>
+
+      <label class="input-def">
+        <span>Loading reference</span>
+        <input type="number" name="loading-reference" id="loading-reference" />
+      </label>
+
+      <button class="loading-cl__btn" type="button">Add loading address</button>
+    </form>
   </div>
 
   <a href="./calcstep4.html" class="btn-sec">Continue to loading address</a>

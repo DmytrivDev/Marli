@@ -3,23 +3,41 @@
     <h2 class="title-calc">Add invoice address</h2>
 
     <form class="invoice-cl__form" id="invoiceForm">
-      <div class="invoice-cl__list-choice">
-        <label class="radio-def">
-          <input type="radio" name="invoice-cl-choice" id="invoice-cl-choice" />
-          <span></span>
-          <p>Same as loading</p>
-        </label>
-        <label class="radio-def">
-          <input type="radio" name="invoice-cl-choice" id="invoice-cl-choice" />
-          <span></span>
-          <p>Same as unloading</p>
-        </label>
-        <label class="radio-def">
-          <input type="radio" name="invoice-cl-choice" id="invoice-cl-choice" />
-          <span></span>
-          <p>Different</p>
-        </label>
-      </div>
+      <ul class="invoice-cl__list-choice">
+        <li>
+          <label class="radio-def">
+            <input
+              type="radio"
+              name="invoice-cl-choice"
+              id="invoice-cl-choice"
+            />
+            <span></span>
+            <p>Same as loading</p>
+          </label>
+        </li>
+        <li>
+          <label class="radio-def">
+            <input
+              type="radio"
+              name="invoice-cl-choice"
+              id="invoice-cl-choice"
+            />
+            <span></span>
+            <p>Same as unloading</p>
+          </label>
+        </li>
+        <li>
+          <label class="radio-def">
+            <input
+              type="radio"
+              name="invoice-cl-choice"
+              id="invoice-cl-choice"
+            />
+            <span></span>
+            <p>Different</p>
+          </label>
+        </li>
+      </ul>
 
       <label class="input-def check-input">
         <span>Email</span>
@@ -31,18 +49,30 @@
         <input type="text" name="invoice-company" id="invoice-company" />
       </label>
 
-      <div class="invoice-cl__list-gender">
-        <label class="radio-def">
-          <input type="radio" name="invoice-cl-gender" id="invoice-cl-gender" />
-          <span></span>
-          <p>Mr.</p>
-        </label>
-        <label class="radio-def">
-          <input type="radio" name="invoice-cl-gender" id="invoice-cl-gender" />
-          <span></span>
-          <p>Ms.</p>
-        </label>
-      </div>
+      <ul class="invoice-cl__list-gender">
+        <li>
+          <label class="radio-def">
+            <input
+              type="radio"
+              name="invoice-cl-gender"
+              id="invoice-cl-gender"
+            />
+            <span></span>
+            <p>Mr.</p>
+          </label>
+        </li>
+        <li>
+          <label class="radio-def">
+            <input
+              type="radio"
+              name="invoice-cl-gender"
+              id="invoice-cl-gender"
+            />
+            <span></span>
+            <p>Ms.</p>
+          </label>
+        </li>
+      </ul>
 
       <div class="invoice-cl__box">
         <label class="input-def">
@@ -70,7 +100,7 @@
         <span class="cals-address__title">Loading</span>
         <div class="cals-address__wrapp">
           <div class="cals-address__select">
-            <select id="a-select">
+            <select id="select-loading">
               <option value="1">AT Austria</option>
               <option value="2">AT Austria</option>
               <option value="3" disabled>AT Austria disabled</option>

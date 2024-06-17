@@ -1,6 +1,84 @@
 <div class="praci-cl">
   <div class="section-margin">
     <h2 class="title-calc">Calculate price for courier transport now</h2>
+
+    <div class="praci-cl__address-box">
+      <div class="praci-cl__address-part">
+        <div class="cals-address">
+          <span class="cals-address__title">Loading</span>
+          <div class="cals-address__wrapp">
+            <div class="cals-address__select">
+              <select id="select-loading">
+                <option value="1">AT Austria</option>
+                <option value="2">AT Austria</option>
+                <option value="3" disabled>AT Austria disabled</option>
+                <option value="4">AT Austria</option>
+              </select>
+            </div>
+
+            <div class="cals-address__choice">
+              <label class="cals-address__choice-input input-def">
+                <input type="text" name="invoice-city" id="invoice-city" />
+              </label>
+              <ul class="cals-address__choice-list">
+                <li>
+                  <label>
+                    <span>AT Austria</span>
+                    <input
+                      type="radio"
+                      name="invoice-address"
+                      id="invoice-address"
+                      value="AT Austria"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="praci-cl__btn-add">
+          Add loading address
+        </button>
+      </div>
+
+      <div class="praci-cl__address-part">
+        <div class="cals-address">
+          <span class="cals-address__title">Unloading</span>
+          <div class="cals-address__wrapp">
+            <div class="cals-address__select">
+              <select id="select-unloading">
+                <option value="1">AT Austria</option>
+                <option value="2">AT Austria</option>
+                <option value="3" disabled>AT Austria disabled</option>
+                <option value="4">AT Austria</option>
+              </select>
+            </div>
+
+            <div class="cals-address__choice">
+              <label class="cals-address__choice-input input-def">
+                <input type="text" name="invoice-city" id="invoice-city" />
+              </label>
+              <ul class="cals-address__choice-list">
+                <li>
+                  <label>
+                    <span>AT Austria</span>
+                    <input
+                      type="radio"
+                      name="invoice-address"
+                      id="invoice-address"
+                      value="AT Austria"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="praci-cl__btn-add">
+          Add unloading address
+        </button>
+      </div>
+    </div>
   </div>
 
   <div class="section-margin">
@@ -9,18 +87,73 @@
 
   <div class="section-margin">
     <h2 class="title-calc">Choose loading date</h2>
+
+    <ul class="praci-cl__list-date">
+      <li>
+        <label class="radio-def radio-wrapp">
+          <input type="radio" name="praci-cl-date" id="praci-cl-date" />
+          <span></span>
+          <p>Today 08.04</p>
+        </label>
+      </li>
+      <li>
+        <label class="radio-def radio-wrapp">
+          <input type="radio" name="praci-cl-date" id="praci-cl-date" />
+          <span></span>
+          <p>Tomorrow 09.04</p>
+        </label>
+      </li>
+      <li>
+        <label class="radio-def radio-wrapp">
+          <input type="radio" name="praci-cl-date" id="praci-cl-date" />
+          <span></span>
+          <p>Wed 10.04</p>
+        </label>
+      </li>
+      <li>
+        <label class="radio-def radio-wrapp">
+          <input type="radio" name="praci-cl-date" id="praci-cl-date" />
+          <span></span>
+          <p>Thu 11.04</p>
+        </label>
+      </li>
+      <li>
+        <label class="radio-def radio-wrapp">
+          <input type="radio" name="praci-cl-date" id="praci-cl-date" />
+          <span></span>
+          <p>Choose date</p>
+        </label>
+      </li>
+    </ul>
   </div>
 
-  <label class="input-def">
-    <span>Company</span>
-    <input type="text" />
-  </label>
+  <div class="section-margin">
+    <div class="praci-cl__info-date">
+      <div class="praci-cl__info-part">
+        <h2 class="praci-cl__info-title">Earliest loading between</h2>
+        <p class="praci-cl__info-time">09.04.2024 | 07:00 - 09:00</p>
+        <p class="praci-cl__info-desc">
+          You can modify the exact time in the next steps
+        </p>
+      </div>
 
-  <label class="radio-def radio-wrapp">
-    <input type="radio" name="radio-r" />
-    <span></span>
-    <p>Wed 10.04</p>
-  </label>
+      <div class="praci-cl__info-part">
+        <h2 class="praci-cl__info-title">Earliest unloading between</h2>
+        <p class="praci-cl__info-time">10.04.2024 | 09:20 - 11:20</p>
+        <p class="praci-cl__info-desc">
+          You can modify the exact time in the next steps
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-margin">
+    <div class="praci-cl__total">
+      <span class="praci-cl__total-subtitle">Total</span>
+      <p class="praci-cl__total-price">899,36 EUR</p>
+      <p class="praci-cl__total-decs">excl. 0% VAT Gross 899,36 EUR *</p>
+    </div>
+  </div>
 
   <a href="./calcstep2.html" class="btn-sec">Continue to shipment</a>
 </div>

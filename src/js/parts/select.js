@@ -1,9 +1,21 @@
 import NiceSelect2 from 'nice-select2';
 
-new NiceSelect2(document.getElementById('a-select'), {
-  searchable: false,
-  placeholder: 'AT',
-});
+const selectLoading = document.getElementById('select-loading');
+const selectUnloading = document.getElementById('select-unloading');
+
+if (selectLoading) {
+  new NiceSelect2(selectLoading, {
+    searchable: false,
+    placeholder: 'AT',
+  });
+}
+
+if (selectUnloading) {
+  new NiceSelect2(selectUnloading, {
+    searchable: false,
+    placeholder: 'AT',
+  });
+}
 
 const loadingBox = document.querySelector('.cals-address__choice');
 const loadingName = document.querySelector('.cals-address__choice-input');

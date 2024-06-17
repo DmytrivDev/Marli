@@ -1,9 +1,7 @@
 import NiceSelect2 from 'nice-select2';
 // import 'nice-select2/dist/css/nice-select2.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-  NiceSelect2.bind(document.getElementById('a-select'), {});
-});
+NiceSelect2.bind(document.getElementById('a-select'));
 
 const loadingBox = document.querySelector('.loading-cl__loading-box');
 const loadingName = document.querySelector('.loading-cl__loading-address');

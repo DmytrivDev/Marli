@@ -151,6 +151,11 @@
       line-height: normal;
     }
   }
+  &__time-part + span {
+    color: #000;
+    font-weight: 500;
+    line-height: normal;
+  }
 
   &__btn {
     position: absolute;

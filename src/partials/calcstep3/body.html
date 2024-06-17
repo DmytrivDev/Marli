@@ -31,31 +31,21 @@
       </label>
 
       <div class="loading-cl__loading">
+        <div class="loading-cl__loading-select">
+          <select id="a-select">
+            <option data-display="Select">AT Austria</option>
+            <option value="1">AT Austria</option>
+            <option value="2">AT Austria</option>
+            <option value="3" disabled>AT Austria disabled</option>
+            <option value="4">AT Austria</option>
+          </select>
+        </div>
+
         <div class="loading-cl__loading-box">
-          <span class="loading-cl__loading-name">AT Austria</span>
+          <label class="loading-cl__loading-address input-def">
+            <input type="text" name="loading-code" id="loading-code" />
+          </label>
           <ul class="loading-cl__loading-list">
-            <li>
-              <label>
-                <span>AT Austria</span>
-                <input
-                  type="radio"
-                  name="loading-loading"
-                  id="loading-loading"
-                  value="AT Austria"
-                />
-              </label>
-            </li>
-            <li>
-              <label>
-                <span>AT Austria</span>
-                <input
-                  type="radio"
-                  name="loading-loading"
-                  id="loading-loading"
-                  value="AT Austria"
-                />
-              </label>
-            </li>
             <li>
               <label>
                 <span>AT Austria</span>
@@ -69,10 +59,6 @@
             </li>
           </ul>
         </div>
-
-        <label class="loading-cl__loading-code">
-          <input type="text" name="loading-code" id="loading-code" />
-        </label>
       </div>
 
       <label class="input-def">
@@ -84,6 +70,34 @@
         <span>Loading reference</span>
         <input type="number" name="loading-reference" id="loading-reference" />
       </label>
+
+      <div class="loading-cl__time">
+        <span class="loading-cl__time-title">
+          Pick up time (select desired time)
+        </span>
+
+        <div class="loading-cl__time-wrapp">
+          <div class="loading-cl__time-date">
+            <button type="button">1</button>
+            <span>09.04.2024</span>
+            <button type="button">2</button>
+          </div>
+
+          <div class="loading-cl__time-times">
+            <div class="loading-cl__time-part">
+              <button type="button">1</button>
+              <span>07:00</span>
+              <button type="button">2</button>
+            </div>
+            <span>-</span>
+            <div class="loading-cl__time-part">
+              <button type="button">1</button>
+              <span>09:00</span>
+              <button type="button">2</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <button class="loading-cl__btn" type="button">Add loading address</button>
     </form>

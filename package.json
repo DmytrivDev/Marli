@@ -24,6 +24,7 @@
     "axios": "^1.6.8",
     "flatpickr": "^4.6.13",
     "hamburgers": "^1.2.1",
+    "nice-select2": "^2.2.0",
     "npm": "^10.7.0",
     "sass": "^1.72.0",
     "scroll-to-element": "^2.0.3",

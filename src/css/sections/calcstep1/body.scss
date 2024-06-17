@@ -1,28 +1,117 @@
 .praci-cl {
   &__address-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
   }
   &__address-part {
+    display: flex;
+    align-items: end;
+    gap: 1.75rem;
+    .cals-address__title {
+      font-size: 1.125rem;
+    }
+    .cals-address__choice {
+      flex-shrink: 0;
+      width: 23rem;
+    }
   }
   &__btn-add {
+    color: var(--cb);
+    font-size: 0.875rem;
+    line-height: normal;
+    margin-bottom: 1.3rem;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
   &__list-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list-choose {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.94rem;
+    span {
+      position: relative;
+      width: 1.5625rem;
+      height: 1.5625rem;
+      border-radius: 50%;
+      border: 0.063rem solid var(--cy);
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.1875rem;
+        height: 1.1875rem;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: all 200ms;
+      }
+    }
+    p {
+      color: var(--ch);
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &__list-choose.is-check {
+    span {
+      &::before {
+        background-color: var(--cb);
+      }
+    }
   }
   &__info-date {
+    display: flex;
+    align-items: start;
+    gap: 10rem;
   }
   &__info-part {
+    width: 24rem;
   }
   &__info-title {
+    color: var(--c0);
+    font-size: 1.3125rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.5rem;
   }
   &__info-time {
+    color: var(--c0);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.44rem;
   }
   &__info-desc {
+    color: var(--ct);
+    font-weight: 400;
+    line-height: normal;
   }
   &__total {
   }
   &__total-subtitle {
+    color: var(--ct);
+    font-size: 1rem;
+    line-height: normal;
+    margin-bottom: 0.37rem;
   }
   &__total-price {
+    color: var(--c0);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: normal;
   }
   &__total-decs {
+    color: var(--ct);
+    font-size: 1rem;
+    line-height: normal;
   }
 }

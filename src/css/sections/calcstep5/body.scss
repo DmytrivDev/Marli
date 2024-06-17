@@ -1,0 +1,71 @@
+.invoice-cl {
+  &__body {
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.63rem;
+    margin-bottom: 3.12rem;
+  }
+  &__list-choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list-gender {
+    display: flex;
+    align-items: center;
+    gap: 3.05rem;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 1.88rem;
+  }
+  &__btn-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    color: var(--cb);
+    font-size: 0.875rem;
+    line-height: normal;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .invoice-cl {
+    &__form {
+      gap: 1.88rem;
+      margin-bottom: 3.12rem;
+    }
+    &__btn-wrapp {
+      transform: translateY(-0.5rem);
+    }
+    &__box {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .invoice-cl {
+    &__list-choice {
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 1.56rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .invoice-cl {
+  }
+}

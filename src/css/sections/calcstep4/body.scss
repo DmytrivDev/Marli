@@ -1,0 +1,49 @@
+.unloading-cl {
+  &__body {
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.63rem;
+    margin-bottom: 5.95rem;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 1.88rem;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    color: var(--cb);
+    font-size: 0.875rem;
+    line-height: normal;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .unloading-cl {
+    &__form {
+      gap: 1.88rem;
+      margin-bottom: 5rem;
+    }
+    &__box {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__btn {
+      bottom: -2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .unloading-cl {
+  }
+}

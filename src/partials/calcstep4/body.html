@@ -1,6 +1,122 @@
 <div class="unloading-cl">
-  <div class="section-margin">
+  <div class="unloading-cl__body">
     <h2 class="title-calc">Enter unloading address</h2>
+
+    <form class="unloading-cl__form" id="unloadingForm">
+      <label class="input-def check-input">
+        <span>Company</span>
+        <input type="text" name="unloading-company" id="unloading-company" />
+      </label>
+
+      <div class="unloading-cl__box">
+        <label class="input-def">
+          <span>First name</span>
+          <input
+            type="text"
+            name="unloading-firstname"
+            id="unloading-firstname"
+          />
+        </label>
+
+        <label class="input-def">
+          <span>Last name</span>
+          <input
+            type="text"
+            name="unloading-lastname"
+            id="unloading-lastname"
+          />
+        </label>
+      </div>
+
+      <label class="input-def">
+        <span>Street + house no.</span>
+        <input type="text" name="unloading-street" id="unloading-street" />
+      </label>
+
+      <label class="input-def">
+        <span>Address in addition</span>
+        <input type="text" name="unloading-address" id="unloading-address" />
+      </label>
+
+      <div class="cals-address">
+        <span class="cals-address__title">Loading</span>
+        <div class="cals-address__wrapp">
+          <div class="cals-address__select">
+            <select id="a-select">
+              <option value="1">AT Austria</option>
+              <option value="2">AT Austria</option>
+              <option value="3" disabled>AT Austria disabled</option>
+              <option value="4">AT Austria</option>
+            </select>
+          </div>
+
+          <div class="cals-address__choice">
+            <label class="cals-address__choice-input input-def">
+              <input type="text" name="unloading-city" id="unloading-city" />
+            </label>
+            <ul class="cals-address__choice-list">
+              <li>
+                <label>
+                  <span>AT Austria</span>
+                  <input
+                    type="radio"
+                    name="unloading-address"
+                    id="unloading-address"
+                    value="AT Austria"
+                  />
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <label class="input-def">
+        <span>Phone number</span>
+        <input type="number" name="unloading-phone" id="unloading-phone" />
+      </label>
+
+      <label class="input-def">
+        <span>Unloading reference</span>
+        <input
+          type="text"
+          name="unloading-reference"
+          id="unloading-reference"
+        />
+      </label>
+
+      <div class="calc-time">
+        <span class="calc-time__title">
+          Pick up time (select desired time)
+        </span>
+
+        <div class="calc-time__wrapp">
+          <div class="calc-time__date">
+            <button type="button" class="calc-time__prev"></button>
+            <span>09.04.2024</span>
+            <button type="button" class="calc-time__next"></button>
+          </div>
+
+          <div class="calc-time__period">
+            <div class="calc-time__part">
+              <button type="button" class="calc-time__prev"></button>
+              <span>07:00</span>
+              <button type="button" class="calc-time__next"></button>
+            </div>
+            <span>-</span>
+            <div class="calc-time__part">
+              <button type="button" class="calc-time__prev"></button>
+              <span>09:00</span>
+              <button type="button" class="calc-time__next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="unloading-cl__btn" type="button">
+        Add unloading address
+      </button>
+    </form>
   </div>
 
   <a href="./calcstep5.html" class="btn-sec">Continue to invoice address</a>

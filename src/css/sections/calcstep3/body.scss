@@ -156,6 +156,18 @@
     font-weight: 500;
     line-height: normal;
   }
+  &__time-prev,
+  &__time-next {
+    width: 0.5125rem;
+    height: 0.825rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M0.999999 1L6 6L1 11' stroke='%23037394' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+  &__time-prev {
+    transform: rotateY(180deg);
+  }
 
   &__btn {
     position: absolute;

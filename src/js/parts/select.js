@@ -3,6 +3,7 @@ import NiceSelect2 from 'nice-select2';
 
 new NiceSelect2(document.getElementById('a-select'), {
   searchable: false,
+  placeholder: 'AT',
 });
 
 const loadingBox = document.querySelector('.loading-cl__loading-box');

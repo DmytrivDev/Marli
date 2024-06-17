@@ -14,92 +14,6 @@
     gap: 1.88rem;
   }
 
-  &__loading {
-    display: flex;
-    align-items: center;
-  }
-
-  &__time {
-  }
-  &__time-title {
-    display: block;
-    color: var(--ck);
-    font-size: 0.875rem;
-    line-height: normal;
-    margin-bottom: 0.88rem;
-  }
-  &__time-wrapp {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-  }
-  &__time-date {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 17.125rem;
-    border-radius: 0.3125rem;
-    border: 0.063rem solid var(--cs);
-    color: var(--ch);
-    padding: 1rem 0.5rem;
-    span {
-      color: var(--ch);
-      line-height: normal;
-    }
-  }
-  &__time-times {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__time-part {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 9rem;
-    border-radius: 0.3125rem;
-    border: 0.063rem solid var(--cs);
-    color: var(--ch);
-    padding: 1rem 0.5rem;
-    span {
-      color: var(--ch);
-      line-height: normal;
-    }
-  }
-  &__time-part + span {
-    color: #000;
-    font-weight: 500;
-    line-height: normal;
-  }
-  &__time-prev,
-  &__time-next {
-    height: 100%;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 200ms;
-    &::after {
-      content: "";
-      width: 0.5125rem;
-      height: 0.825rem;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M0.999999 1L6 6L1 11' stroke='%23037394' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    }
-    &:hover {
-      filter: invert(12%) sepia(0%) saturate(0%) hue-rotate(50deg)
-        brightness(99%) contrast(93%);
-    }
-  }
-  &__time-prev {
-    transform: rotateY(180deg);
-  }
-
   &__btn {
     position: absolute;
     bottom: -3rem;
@@ -110,5 +24,26 @@
     &:hover {
       text-decoration-line: underline;
     }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .loading-cl {
+    &__form {
+      gap: 1.88rem;
+      margin-bottom: 5rem;
+    }
+    &__box {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__btn {
+      bottom: -2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .loading-cl {
   }
 }

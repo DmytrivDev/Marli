@@ -164,6 +164,7 @@
     }
     &__info-date {
       gap: 5rem;
+      margin-bottom: 2.2rem;
     }
     &__info-part {
       max-width: 16rem;
@@ -178,6 +179,11 @@
     }
     &__info-desc {
       font-size: 0.875rem;
+    }
+    &__total {
+      border-top: 0.063rem solid var(--cv);
+      padding-top: 2.2rem;
+      margin-bottom: 2.2rem;
     }
     &__total-subtitle {
       font-size: 0.875rem;
@@ -217,15 +223,9 @@
     &__info-date {
       flex-direction: column;
       gap: 2.37rem;
-      margin-bottom: 2.2rem;
     }
     &__info-part {
       max-width: 100%;
-    }
-    &__total {
-      border-top: 0.063rem solid var(--cv);
-      padding-top: 2.2rem;
-      margin-bottom: 2.2rem;
     }
   }
 }

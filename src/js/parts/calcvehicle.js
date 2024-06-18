@@ -1,7 +1,7 @@
 const handleSelection = selectedRadio => {
   const labels = document.querySelectorAll('.vehicle__content-label');
 
-  labels.forEach(labl => {
+  labels?.forEach(labl => {
     labl.classList.remove('is-check');
 
     const backview = labl.querySelector('.vehicle__backview');
@@ -19,6 +19,15 @@ const handleSelection = selectedRadio => {
       .querySelector('.vehicle__sidebar');
     if (sidebar) {
       sidebar.classList.remove('is-check');
+    }
+
+    const checkboxSidebar = sidebar.querySelectorAll(
+      'input[name="vehicle-checkbox"]'
+    );
+    if (checkboxSidebar) {
+      checkboxSidebar.forEach(box => {
+        box.checked = false;
+      });
     }
   });
 

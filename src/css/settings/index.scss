@@ -252,7 +252,7 @@
   }
 }
 
-.cals-address {
+.calc-address {
   &__wrapp {
     display: flex;
     align-items: center;
@@ -400,6 +400,10 @@
     display: flex;
   }
 
+  .radio-wrapp {
+    padding: 1rem 1.45rem 1rem 1.3rem;
+  }
+
   .calc-time {
     &__wrapp {
       gap: 3rem;
@@ -433,7 +437,7 @@
 }
 
 @media screen and (max-width: 660px) {
-  .cals-address {
+  .calc-address {
     .nice-select {
       width: 5.25rem !important;
     }

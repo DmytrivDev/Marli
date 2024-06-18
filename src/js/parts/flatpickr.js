@@ -23,7 +23,7 @@ style.innerHTML = `
   `;
 document.head.appendChild(style);
 
-const chooseDate = document.querySelector('.praci-cl__list-choose');
+const chooseDate = document.querySelector('.praci-cl__choose-date');
 const radioButtons = document.querySelectorAll('input[name="praci-cl-date"]');
 
 chooseDate?.addEventListener('click', () => {

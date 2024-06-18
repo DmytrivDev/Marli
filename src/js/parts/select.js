@@ -17,9 +17,9 @@ if (selectUnloading) {
   });
 }
 
-const loadingBox = document.querySelector('.cals-address__choice');
-const loadingName = document.querySelector('.cals-address__choice-input');
-const loadingList = document.querySelector('.cals-address__choice-list');
+const loadingBox = document.querySelector('.calc-address__choice');
+const loadingName = document.querySelector('.calc-address__choice-input');
+const loadingList = document.querySelector('.calc-address__choice-list');
 
 if (loadingBox) {
   loadingName?.addEventListener('click', () => {
@@ -28,7 +28,7 @@ if (loadingBox) {
   });
 
   window.addEventListener('click', e => {
-    if (!e.target.closest('.cals-address__choice-input')) {
+    if (!e.target.closest('.calc-address__choice-input')) {
       loadingList?.classList.remove('is-opened');
       loadingName?.classList.remove('is-opened');
     }

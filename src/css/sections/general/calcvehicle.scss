@@ -1,0 +1,126 @@
+.vehicle {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  &__item {
+    display: flex;
+    align-items: start;
+    gap: 1.75rem;
+  }
+
+  &__content {
+  }
+  &__content-label {
+    display: block;
+    width: 37.8125rem;
+    border-radius: 0.3125rem;
+    background-color: var(--cw);
+    padding: 1.85rem 1.95rem;
+    border: 0.063rem solid var(--cs);
+    &.is-check {
+      border: 0.063rem solid var(--cb);
+    }
+  }
+
+  &__preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__preview-part {
+    display: flex;
+    align-items: center;
+    input {
+      display: none;
+    }
+    input:checked + .vehicle__preview-check::before {
+      background-color: var(--cb);
+    }
+  }
+  &__preview-check {
+    position: relative;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    border: 0.063rem solid var(--cy);
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 1.1875rem;
+      height: 1.1875rem;
+      border-radius: 50%;
+      background-color: transparent;
+      transition: all 200ms;
+    }
+    &.is-check::before {
+      background-color: var(--cb);
+    }
+  }
+  &__preview-title {
+    color: var(--ch);
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 0.94rem;
+  }
+  &__preview-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.6875rem;
+    img {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+    }
+    &.is-hidden {
+      display: none;
+    }
+  }
+  &__preview-price {
+    color: var(--ch);
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 1.55rem;
+  }
+
+  &__backview {
+    display: none;
+    &.is-check {
+      display: block;
+    }
+  }
+  &__backview-criteria {
+  }
+  &__backview-size {
+  }
+  &__backview-info {
+  }
+  &__backview-img {
+  }
+
+  &__sidebar {
+    display: none;
+    width: 100%;
+    border-radius: 0.3125rem;
+    border: 0.063rem solid var(--cs);
+    background-color: var(--cw);
+    padding: 1.5rem 1.95rem;
+    &.is-check {
+      display: block;
+    }
+  }
+  &__sidebar-title {
+  }
+  &__sidebar-desc {
+  }
+  &__sidebar-list {
+  }
+  &__sidebar-label {
+  }
+}

@@ -10,6 +10,7 @@
 @import url('./sections/general/companies.scss');
 @import url('./sections/general/overview.scss');
 @import url('./sections/general/delivery.scss');
+@import url('./sections/general/flatpickr.scss');
 
 @import url('./sections/general/calcwidget.scss');
 @import url('./sections/general/calcsidebar.scss');

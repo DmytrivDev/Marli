@@ -1,10 +1,8 @@
 import flatpickr from 'flatpickr';
-import { French } from 'flatpickr/dist/l10n/fr.js';
 
 import 'flatpickr/dist/flatpickr.min.css';
 
 flatpickr('#choose-date', {
-  locale: French,
   altInput: true,
   altFormat: 'M j, Y',
   dateFormat: 'd.m.Y',
@@ -12,8 +10,26 @@ flatpickr('#choose-date', {
   minDate: 'today',
   shorthandCurrentMonth: true,
   maxDate: new Date().fp_incr(21),
-  // inline: true,
+  disableMobile: 'true',
+  locale: {
+    firstDayOfWeek: 0,
+    weekdays: {
+      shorthand: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+      longhand: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+    },
+  },
 });
+
+const monthDropdown = document.querySelector('.flatpickr-monthDropdown-months');
+monthDropdown.disabled = true;
 
 const style = document.createElement('style');
 style.innerHTML = `

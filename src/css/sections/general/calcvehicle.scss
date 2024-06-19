@@ -46,6 +46,7 @@
   }
   &__preview-check {
     position: relative;
+    flex-shrink: 0;
     width: 1.5625rem;
     height: 1.5625rem;
     border-radius: 50%;
@@ -70,6 +71,7 @@
     color: var(--ch);
     font-weight: 500;
     line-height: normal;
+    font-size: 1rem;
     margin-left: 0.94rem;
   }
   &__preview-img {
@@ -245,10 +247,76 @@
 
 @media screen and (max-width: 960px) {
   .vehicle {
+    &__content {
+      max-width: 40rem;
+      width: 100%;
+    }
+    &__content-label {
+      width: 100%;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    &__backview {
+      margin-top: 1.25rem;
+    }
+    &__backview-criteria {
+      gap: 0.75rem;
+      margin-bottom: 0.94rem;
+      p {
+        font-size: 0.75rem;
+      }
+    }
+    &__backview-img {
+      position: absolute;
+      top: 1.5rem;
+      right: 0;
+      width: 13.5rem;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__sidebar {
+      &.is-check {
+        display: none;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .vehicle {
+    &__content {
+      max-width: 25rem;
+    }
+    &__content-label {
+      padding: 1.38rem;
+    }
+
+    &__preview {
+      align-items: start;
+      margin-bottom: 1rem;
+    }
+    .preview-part1 {
+      align-items: start;
+    }
+    .preview-part2 {
+      flex-direction: column-reverse;
+      align-items: end;
+      gap: 3.3rem;
+    }
+
+    &__backview-size {
+      margin-bottom: 9.5rem;
+    }
+    &__backview-img {
+      top: 6rem;
+    }
   }
 }

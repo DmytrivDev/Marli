@@ -17,20 +17,22 @@ if (selectUnloading) {
   });
 }
 
-const loadingBox = document.querySelector('.calc-address__choice');
-const loadingName = document.querySelector('.calc-address__choice-input');
-const loadingList = document.querySelector('.calc-address__choice-list');
+const addressChoices = document.querySelectorAll('.calc-address__choice');
+const addressInputs = document.querySelectorAll('.calc-address__choice-input');
+const addressLists = document.querySelectorAll('.calc-address__choice-list');
 
-if (loadingBox) {
-  loadingName?.addEventListener('click', () => {
-    loadingList?.classList.toggle('is-opened');
-    loadingName.classList.toggle('is-opened');
+if (addressChoices) {
+  addressInputs.forEach((input, index) => {
+    input.addEventListener('click', () => {
+      addressLists[index].classList.toggle('is-opened');
+      input.classList.toggle('is-opened');
+    });
   });
 
   window.addEventListener('click', e => {
     if (!e.target.closest('.calc-address__choice-input')) {
-      loadingList?.classList.remove('is-opened');
-      loadingName?.classList.remove('is-opened');
+      addressLists.forEach(list => list.classList.remove('is-opened'));
+      addressInputs.forEach(input => input.classList.remove('is-opened'));
     }
   });
 }

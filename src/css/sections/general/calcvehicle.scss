@@ -13,14 +13,19 @@
   &__content {
   }
   &__content-label {
+    cursor: pointer;
     display: block;
     width: 37.8125rem;
     border-radius: 0.3125rem;
     background-color: var(--cw);
     padding: 1.85rem 1.95rem;
     border: 0.063rem solid var(--cs);
+    transition: all 200ms;
     &.is-check {
       border: 0.063rem solid var(--cb);
+    }
+    &:hover {
+      box-shadow: var(--shadow1);
     }
   }
 
@@ -70,7 +75,7 @@
   &__preview-img {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 6.6875rem;
     img {
@@ -83,6 +88,8 @@
     }
   }
   &__preview-price {
+    width: 6rem;
+    text-align: right;
     color: var(--ch);
     font-weight: 600;
     line-height: normal;
@@ -90,18 +97,75 @@
   }
 
   &__backview {
+    position: relative;
     display: none;
+    margin-top: 0.94rem;
     &.is-check {
       display: block;
     }
   }
   &__backview-criteria {
+    display: flex;
+    align-items: center;
+    gap: 0.94rem;
+    margin-bottom: 0.88rem;
+    li {
+      display: flex;
+      padding: 0.5rem 0.56rem;
+      align-items: center;
+      gap: 0.38rem;
+      border-radius: 0.3125rem;
+      background-color: var(--cx);
+    }
+    img {
+      width: 0.875rem;
+      height: auto;
+    }
+    p {
+      color: var(--ch);
+      font-size: 0.875rem;
+      line-height: normal;
+    }
   }
   &__backview-size {
+    color: var(--ct);
+    font-size: 0.875rem;
+    line-height: normal;
+    margin-bottom: 2.44rem;
+    span {
+      color: var(--ch);
+      font-weight: 500;
+    }
   }
   &__backview-info {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--ch);
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+      &::before {
+        content: "";
+        width: 0.219rem;
+        height: 0.219rem;
+        border-radius: 50%;
+        background-color: var(--ch);
+      }
+    }
   }
   &__backview-img {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    width: 13.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__sidebar {
@@ -116,11 +180,65 @@
     }
   }
   &__sidebar-title {
+    color: var(--ch);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.3rem;
   }
   &__sidebar-desc {
+    color: var(--ct);
+    font-size: 0.875rem;
+    line-height: normal;
+    margin-bottom: 1.5rem;
   }
   &__sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
   &__sidebar-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    span {
+      position: relative;
+      width: 0.9375rem;
+      height: 0.9375rem;
+      flex-shrink: 0;
+      border-radius: 0.0625rem;
+      border: 0.063rem solid var(--cy);
+      background-color: var(--cw);
+      transition: all 200ms;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 0.5rem;
+        height: 0.375rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        transition: all 200ms;
+      }
+    }
+    p {
+      color: var(--ch);
+      font-size: 0.875rem;
+      line-height: normal;
+    }
+    input {
+      display: none;
+      &:checked + span {
+        border: 0.063rem solid var(--cb);
+        background-color: var(--cb);
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6' fill='none'%3E%3Cpath d='M8 0.6C8 0.753525 7.9442 0.907125 7.83259 1.02412L3.26116 5.82413C3.15 5.94187 3.00357 6 2.85714 6C2.71071 6 2.56464 5.94141 2.45321 5.82422L0.1675 3.42422C0.0558929 3.3075 0 3.15375 0 3C0 2.65725 0.266964 2.4 0.571429 2.4C0.717643 2.4 0.863929 2.45859 0.975357 2.57578L2.85714 4.5525L7.025 0.17625C7.13571 0.0586875 7.28214 0 7.42857 0C7.73393 0 8 0.256875 8 0.6Z' fill='white'/%3E%3C/svg%3E");
+        }
+      }
+    }
   }
 }

@@ -39,19 +39,29 @@ style.innerHTML = `
   `;
 document.head.appendChild(style);
 
-const chooseDate = document.querySelector('.praci-cl__choose-date');
+const chooseDateLabel = document.querySelector('.praci-cl__choose-date');
+const dateInput = document.getElementById('choose-date');
 const radioButtons = document.querySelectorAll('input[name="praci-cl-date"]');
 
-chooseDate?.addEventListener('click', () => {
-  chooseDate.classList.add('is-check');
+const checkInputText = () => {
+  if (dateInput.value !== '') {
+    chooseDateLabel.classList.add('is-check');
 
-  radioButtons.forEach(function (radio) {
-    radio.checked = false;
-  });
-});
+    radioButtons.forEach(radio => {
+      radio.checked = false;
+    });
+  } else {
+    chooseDateLabel.classList.remove('is-check');
+  }
+};
 
-radioButtons?.forEach(radio => {
+dateInput.addEventListener('input', checkInputText);
+
+radioButtons.forEach(radio => {
   radio.addEventListener('click', () => {
-    chooseDate.classList.remove('is-check');
+    chooseDateLabel.classList.remove('is-check');
+    dateInput.value = '';
   });
 });
+
+checkInputText();

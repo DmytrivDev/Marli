@@ -18,21 +18,23 @@ if (selectUnloading) {
 }
 
 const addressChoices = document.querySelectorAll('.calc-address__choice');
-const addressInputs = document.querySelectorAll('.calc-address__choice-input');
+const addressInputs = document.querySelectorAll(
+  '.calc-address__choice-input input'
+);
 const addressLists = document.querySelectorAll('.calc-address__choice-list');
 
 if (addressChoices) {
   addressInputs.forEach((input, index) => {
-    input.addEventListener('click', () => {
-      addressLists[index].classList.toggle('is-opened');
-      input.classList.toggle('is-opened');
+    input.addEventListener('focus', () => {
+      addressLists[index].classList.add('is-opened');
+      input.classList.add('is-opened');
     });
-  });
 
-  window.addEventListener('click', e => {
-    if (!e.target.closest('.calc-address__choice-input')) {
-      addressLists.forEach(list => list.classList.remove('is-opened'));
-      addressInputs.forEach(input => input.classList.remove('is-opened'));
-    }
+    input.addEventListener('blur', () => {
+      setTimeout(() => {
+        addressLists[index].classList.remove('is-opened');
+        input.classList.remove('is-opened');
+      }, 100);
+    });
   });
 }

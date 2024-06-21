@@ -149,6 +149,10 @@
     filter: invert(23%) sepia(26%) saturate(13%) hue-rotate(112deg)
       brightness(93%) contrast(79%) !important;
   }
+  & svg {
+    width: 0.875rem !important;
+    height: 0.875rem !important;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -29,7 +29,7 @@ flatpickr('#choose-date', {
 });
 
 const monthDropdown = document.querySelector('.flatpickr-monthDropdown-months');
-monthDropdown.disabled = true;
+if (monthDropdown) monthDropdown.disabled = true;
 
 const style = document.createElement('style');
 style.innerHTML = `
@@ -44,18 +44,20 @@ const dateInput = document.getElementById('choose-date');
 const radioButtons = document.querySelectorAll('input[name="praci-cl-date"]');
 
 const checkInputText = () => {
-  if (dateInput.value !== '') {
-    chooseDateLabel.classList.add('is-check');
+  if (dateInput) {
+    if (dateInput.value !== '') {
+      chooseDateLabel.classList.add('is-check');
 
-    radioButtons.forEach(radio => {
-      radio.checked = false;
-    });
-  } else {
-    chooseDateLabel.classList.remove('is-check');
+      radioButtons.forEach(radio => {
+        radio.checked = false;
+      });
+    } else {
+      chooseDateLabel.classList.remove('is-check');
+    }
   }
 };
 
-dateInput.addEventListener('input', checkInputText);
+dateInput?.addEventListener('input', checkInputText);
 
 radioButtons.forEach(radio => {
   radio.addEventListener('click', () => {

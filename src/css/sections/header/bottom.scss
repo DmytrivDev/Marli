@@ -13,6 +13,7 @@
     align-items: center;
     gap: 2.38rem;
     a {
+      display: block;
       color: var(--cw);
       line-height: normal;
       transition: all 200ms;
@@ -27,6 +28,44 @@
   .header {
     &__bottom {
       display: none;
+    }
+    &__bottom {
+      padding: 0;
+      background-color: var(--cw);
+    }
+    &__nav {
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+    }
+    &__list {
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+      width: 100%;
+      li {
+        width: 100%;
+      }
+      a {
+        color: var(--ch);
+        font-size: 1rem;
+        padding: 0.88rem 1.25rem;
+        border-bottom: 0.063rem solid var(--cp);
+        &:hover {
+          color: var(--ct);
+        }
+      }
+    }
+  }
+
+  .mob-menu {
+    .header__bottom {
+      display: block;
+      .container {
+        padding: 0;
+        margin: 0;
+        max-width: none;
+      }
     }
   }
 }

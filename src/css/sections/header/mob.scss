@@ -4,28 +4,69 @@
 
 @media screen and (max-width: 960px) {
   .mob-menu {
+    overflow-y: scroll;
     display: block;
     position: absolute;
-    background-color: var(--cb);
+    background-color: var(--cw);
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: 10;
-    transition: all 200ms;
+    transition: all 500ms;
     transform: translateY(-100%);
     &.is-opened {
       transform: translateY(0);
     }
     &__body {
-      height: 100%;
+      width: 100%;
+      height: calc(100% - 4.2rem);
+      margin-top: 4.2rem;
+    }
+
+    &__btn {
+      padding: 1.25rem;
+      border-bottom: 0.063rem solid var(--cp);
+    }
+
+    &__address {
+      width: 100%;
+      .header__address {
+        margin: 0;
+      }
+      .address-email {
+        width: 100%;
+        display: flex;
+        font-size: 1rem;
+        padding: 0.88rem 1.25rem;
+        border-bottom: 0.063rem solid var(--cp);
+      }
+    }
+
+    &__lang {
+      padding: 0 1.25rem;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 3rem;
-      color: var(--cw);
-      letter-spacing: 1rem;
+      justify-content: space-between;
+      border-bottom: 0.063rem solid var(--cp);
+    }
+    &__lang-name {
+      color: var(--ct);
+      font-size: 1rem;
+      line-height: normal;
+    }
+    &__lang-wrapp {
+      .header__lang {
+        display: block;
+      }
+    }
+
+    &__reviews {
+      .header__rating {
+        display: block;
+      }
+      padding: 1.12rem 1.25rem 1.2rem 1.25rem;
     }
   }
 }

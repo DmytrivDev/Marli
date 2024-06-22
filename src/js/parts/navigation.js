@@ -25,3 +25,9 @@ if (langBoxes) {
     });
   });
 }
+
+window.addEventListener('click', () => {
+  document.querySelectorAll('.sub-menu.is-opened').forEach(openedMenu => {
+    openedMenu?.classList.remove('is-opened');
+  });
+});

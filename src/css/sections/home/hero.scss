@@ -9,6 +9,8 @@
     margin-bottom: 0.5rem;
   }
   &__title {
+    position: relative;
+    z-index: 2;
   }
   &__list {
     display: flex;

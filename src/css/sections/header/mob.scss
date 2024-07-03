@@ -2,6 +2,12 @@
   display: none;
 }
 
+.header__lang {
+  span {
+    margin-left: 0 !important;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .mob-menu {
     overflow-y: scroll;

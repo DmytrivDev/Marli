@@ -50,6 +50,8 @@
 
 /* Calculator1 */
 @import url('./sections/calcstep1/body.scss');
+@import url('./../../node_modules/nice-select2/src/scss/nice-select2.scss');
+@import url('./../../node_modules/flatpickr/dist/flatpickr.min.css');
 
 /* Calculator2 */
 @import url('./sections/calcstep2/widget.scss');

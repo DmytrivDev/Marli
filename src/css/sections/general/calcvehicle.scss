@@ -205,6 +205,15 @@
     align-items: center;
     gap: 0.75rem;
     width: fit-content;
+    &.checked {
+      span {
+        border: 0.063rem solid var(--cb);
+        background-color: var(--cb);
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6' fill='none'%3E%3Cpath d='M8 0.6C8 0.753525 7.9442 0.907125 7.83259 1.02412L3.26116 5.82413C3.15 5.94187 3.00357 6 2.85714 6C2.71071 6 2.56464 5.94141 2.45321 5.82422L0.1675 3.42422C0.0558929 3.3075 0 3.15375 0 3C0 2.65725 0.266964 2.4 0.571429 2.4C0.717643 2.4 0.863929 2.45859 0.975357 2.57578L2.85714 4.5525L7.025 0.17625C7.13571 0.0586875 7.28214 0 7.42857 0C7.73393 0 8 0.256875 8 0.6Z' fill='white'/%3E%3C/svg%3E");
+        }
+      }
+    }
     span {
       position: relative;
       width: 0.9375rem;

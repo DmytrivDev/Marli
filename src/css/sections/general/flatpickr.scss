@@ -7,6 +7,7 @@
   max-width: 100% !important;
   width: auto !important;
   padding: 0 !important;
+  transform: translateX(1.8rem) !important;
 }
 .flatpickr-months {
   display: flex !important;
@@ -155,6 +156,12 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .flatpickr-calendar {
+    transform: translate(-3.8rem) !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .flatpickr-weekdays {
     height: 3rem !important;
@@ -164,5 +171,13 @@
   }
   .dayContainer {
     gap: 0.55rem !important;
+  }
+}
+
+
+
+@media screen and (max-width: 419px) {
+  .flatpickr-calendar {
+    transform: translate(0) !important;
   }
 }

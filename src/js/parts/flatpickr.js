@@ -1,7 +1,5 @@
 import flatpickr from 'flatpickr';
 
-import 'flatpickr/dist/flatpickr.min.css';
-
 flatpickr('#choose-date', {
   altInput: true,
   altFormat: 'M j, Y',
@@ -9,7 +7,6 @@ flatpickr('#choose-date', {
   showMonths: 1,
   minDate: 'today',
   shorthandCurrentMonth: true,
-  maxDate: new Date().fp_incr(21),
   disableMobile: 'true',
   locale: {
     firstDayOfWeek: 0,

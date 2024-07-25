@@ -21,7 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
-    "axios": "^1.6.8",
+    "axios": "^1.7.2",
     "flatpickr": "^4.6.13",
     "hamburgers": "^1.2.1",
     "nice-select2": "^2.2.0",

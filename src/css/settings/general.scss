@@ -6,6 +6,10 @@ body {
   line-height: 1.7;
 }
 
+input {
+  font-family: var(--ff) !important;
+}
+
 .overhide {
   overflow: hidden;
 }
